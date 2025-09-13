@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;              /* scrollbar width */
+  height: 10px;             /* scrollbar height (for horizontal scroll) */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;       /* track background (light gray) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;       /* scrollbar handle in white */
+  border-radius: 8px;        /* rounded edges */
+  border: 2px solid #ccc;    /* optional: outline so it’s visible */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5e5e5;       /* hover color (light gray) */
+}
+

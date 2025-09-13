@@ -1,8 +1,16 @@
-
+"use client";
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
 
 const VolunteerSection: React.FC = () => {
+  // Function to scroll smoothly to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <section className="min-h-full bg-gray-50 flex items-center justify-center px-4 py-16 relative">
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
@@ -19,7 +27,7 @@ const VolunteerSection: React.FC = () => {
         <div className="space-y-8">
           <p className="text-gray-600 text-lg leading-relaxed">
             Join us in building a drug-free future and empowering the next 
-            generation. As a volunteer, you'll be part of awareness campaigns, 
+            generation. As a volunteer, you&apos;ll be part of awareness campaigns, 
             community programs, and youth initiatives that make a real difference. 
             Together, we can create safer neighborhoods and a stronger community.
           </p>
@@ -31,7 +39,11 @@ const VolunteerSection: React.FC = () => {
       </div>
 
       {/* Scroll to Top Button */}
-      <button className="fixed bottom-8 right-8 bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110">
+      <button
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 bg-orange-500 hover:bg-orange-600 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110"
+        aria-label="Scroll to top"
+      >
         <ArrowUp size={24} />
       </button>
     </section>
