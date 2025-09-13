@@ -21,9 +21,6 @@ const LogoSection = () => {
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
-            <h3 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
-              Drugs Free Youth
-            </h3>
           </div>
 
           {/* MakeAChange Foundation Logo */}
@@ -37,9 +34,6 @@ const LogoSection = () => {
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
-            <h3 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
-              MakeAChange Foundation
-            </h3>
           </div>
 
           {/* Mangaluru City Police Logo */}
@@ -53,9 +47,6 @@ const LogoSection = () => {
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
-            <h3 className="text-sm sm:text-base font-semibold text-gray-800 text-center">
-              Mangaluru City Police
-            </h3>
           </div>
         </div>
       </div>
