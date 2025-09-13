@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "Join our mission to create a drug-free nation. Report drug peddlers anonymously and help save our youth from the menace of drugs. Partnership with MakeAChange Foundation and Mangaluru City Police.",
   keywords: "drug free youth, anti-drug campaign, report drug peddlers, drug awareness, youth safety, Mangaluru police, MakeAChange Foundation",
   authors: [{ name: "Drugs Free Youth" }],
+  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "Drugs Free Youth - Stand Strong, Stay Awake, Save Youth",
     description: "Join our mission to create a drug-free nation. Report drug peddlers anonymously.",
