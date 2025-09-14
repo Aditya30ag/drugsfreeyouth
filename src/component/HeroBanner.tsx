@@ -35,11 +35,11 @@ const HeroBanner = () => {
                     <div className="relative bg-black/20 rounded-2xl p-4 sm:p-6 backdrop-blur-sm border border-white/20 max-w-md mx-auto">
                         <div className="flex items-center justify-center text-white/80 mb-2">
                             <svg className="w-8 h-8 sm:w-12 sm:h-12 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
                             </svg>
-                            <span className="text-sm sm:text-base font-semibold">Watch Our Mission in Action</span>
+                            <span className="text-sm sm:text-base font-semibold">Join 10,000+ Community Members</span>
                         </div>
-                        <p className="text-xs sm:text-sm text-white/70">See real parents, youth, and community events</p>
+                        <p className="text-xs sm:text-sm text-white/70">Parents, youth, and community leaders working together</p>
                     </div>
                 </div>
 
