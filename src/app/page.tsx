@@ -1,13 +1,13 @@
-﻿import Header from '../component/Header';
-import HeroBanner from '../component/HeroBanner';
-import QRCodeSection from '../component/QRCodeSection';
-import ImpactSnapshot from '../component/ImpactSnapshot';
-import CampaignPillars from '../component/CampaignPillars';
-import SuccessStories from '../component/SuccessStories';
-import ResourcesEducation from '../component/ResourcesEducation';
-import PartnersEndorsements from '../component/PartnersEndorsements';
-import StatsSection from '../component/StatsSection';
-import EnhancedFooter from '../component/EnhancedFooter';
+﻿import Header from '../components/Header';
+import HeroBanner from '../components/HeroBanner';
+import QRCodeSection from '../components/QRCodeSection';
+import ImpactSnapshot from '../components/ImpactSnapshot';
+import CampaignPillars from '../components/CampaignPillars';
+import SuccessStories from '../components/SuccessStories';
+import ResourcesEducation from '../components/ResourcesEducation';
+import PartnersEndorsements from '../components/PartnersEndorsements';
+import StatsSection from '../components/StatsSection';
+import EnhancedFooter from '../components/EnhancedFooter';
 
 export default function Home() {
   return (

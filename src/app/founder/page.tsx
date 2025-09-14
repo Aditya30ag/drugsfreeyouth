@@ -1,13 +1,13 @@
-﻿import Header from '../../component/Header';
-import FounderHero from '../../component/FounderHero';
-import EntrepreneurshipJourney from '../../component/EntrepreneurshipJourney';
-import DrugsFreeYouthVision from '../../component/DrugsFreeYouthVision';
-import LeadershipPhilosophy from '../../component/LeadershipPhilosophy';
-import FounderImpact from '../../component/FounderImpact';
-import FounderMessage from '../../component/FounderMessage';
-import BeyondSocialChange from '../../component/BeyondSocialChange';
-import FounderInvitation from '../../component/FounderInvitation';
-import EnhancedFooter from '@/component/EnhancedFooter';
+﻿import Header from '../../components/Header';
+import FounderHero from '../../components/FounderHero';
+import EntrepreneurshipJourney from '../../components/EntrepreneurshipJourney';
+import DrugsFreeYouthVision from '../../components/DrugsFreeYouthVision';
+import LeadershipPhilosophy from '../../components/LeadershipPhilosophy';
+import FounderImpact from '../../components/FounderImpact';
+import FounderMessage from '../../components/FounderMessage';
+import BeyondSocialChange from '../../components/BeyondSocialChange';
+import FounderInvitation from '../../components/FounderInvitation';
+import EnhancedFooter from '@/components/EnhancedFooter';
 
 export default function Founder() {
   return (
@@ -20,6 +20,7 @@ export default function Founder() {
       <FounderImpact />
       <FounderMessage />
       <BeyondSocialChange />
+      <FounderInvitation />
       <EnhancedFooter/>
     </div>
   );

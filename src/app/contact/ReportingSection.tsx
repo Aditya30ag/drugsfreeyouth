@@ -3,7 +3,7 @@ import { QrCode, Shield } from 'lucide-react';
 
 const ReportingSection = () => {
     return (
-        <section className="py-16 bg-gradient-to-r from-red-50 to-orange-50">
+        <section id="report" className="py-16 bg-gradient-to-r from-red-50 to-orange-50 scroll-mt-28">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-red-600 text-white rounded-full mb-6">

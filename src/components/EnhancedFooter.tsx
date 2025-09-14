@@ -1,15 +1,8 @@
 ﻿"use client";
 import React from "react";
-import { ArrowUp } from "lucide-react";
 
 const EnhancedFooter: React.FC = () => {
-  // Function to scroll smoothly to the top
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // Floating scroll-to-top removed to avoid overlapping the chat widget.
 
   return (
     <footer className="relative bg-white text-gray-800">
@@ -124,14 +117,7 @@ const EnhancedFooter: React.FC = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-6 sm:bottom-8 right-6 sm:right-8 bg-red-600 hover:bg-red-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 z-50"
-        aria-label="Scroll to top"
-      >
-        <ArrowUp size={24} />
-      </button>
+      {/** Removed floating scroll-to-top button to avoid overlap with chat widget */}
     </footer>
   );
 };
