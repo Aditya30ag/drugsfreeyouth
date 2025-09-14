@@ -9,12 +9,14 @@ import ImpactNumbers from '../../components/ImpactNumbers';
 import Partnerships from '../../components/Partnerships';
 import LookingAhead from '../../components/LookingAhead';
 import EnhancedFooter from '@/components/EnhancedFooter';
+import AboutImageSlider from '@/components/AboutImageSlider';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
       <AboutHero />
+      <AboutImageSlider />
       <MissionVision />
       <OurStory />
       <WhyThisMatters />

@@ -107,9 +107,11 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  /* Single brand accent (blue) used across site */
-  --primary: oklch(0.6 0.18 255);
-  --primary-foreground: oklch(0.985 0 0);
+  /* Brand primary (Deep Indigo) and CTA accent (Orange) */
+  --primary: #1E3A8A; /* Deep Indigo */
+  --primary-foreground: #ffffff;
+  --cta: #C2410C;     /* Orange 700 */
+  --cta-hov: #9A3412; /* Darker hover */
   /* Secondary = subtle neutral */
   --secondary: oklch(0.97 0 0);
   --secondary-foreground: oklch(0.205 0 0);
@@ -143,9 +145,9 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  /* Keep the same single accent in dark mode */
-  --primary: oklch(0.62 0.19 255);
-  --primary-foreground: oklch(0.145 0 0);
+  /* Brand accent in dark mode matches light */
+  --primary: #1E3A8A; /* Deep Indigo */
+  --primary-foreground: #ffffff;
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: oklch(0.985 0 0);
   --muted: oklch(0.269 0 0);
@@ -178,4 +180,22 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Utility classes for hero and CTA based on the chosen palette */
+.hero h1,
+.hero .tagline {
+  color: var(--primary);
+}
+
+.button-primary {
+  background: var(--cta);
+  color: #fff;
+}
+.button-primary:hover {
+  background: var(--cta-hov);
+}
+.button-primary:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
 }

@@ -23,9 +23,9 @@ const CampaignHero = () => {
             </span>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight text-slate-900">
             Stand Strong, Stay Awake,<br />
-            <span className="text-primary">Save Youth</span>
+            <span className="text-slate-900">Save Youth</span>
           </h1>
 
           <p className="text-lg sm:text-xl lg:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed mb-16">

@@ -1,12 +1,13 @@
 ﻿import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { CrowdCanvas } from './CrowdCanvas';
 
 const HeroBanner = () => {
     return (
-           <section className="relative min-h-screen flex flex-col overflow-hidden bg-background">
+           <section className="hero relative min-h-screen flex flex-col overflow-hidden">
             {/* Logo Section at Top */}
-            <div className="relative z-20 bg-background py-8 md:py-12">
+            <div className="relative z-20 py-8 md:py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-center gap-12 md:gap-20 lg:gap-32">
                         {/* Drugs Free Youth Logo */}
@@ -51,46 +52,40 @@ const HeroBanner = () => {
                 </div>
             </div>
 
-            {/* Hero Section */}
-            <div className="relative flex-1 flex items-center justify-center">
-                {/* Background Image with soft blur + tint */}
+            {/* Hero Section with overlayed content */}
+            <div className="relative flex-1">
+                {/* Background Animation */}
                 <div className="absolute inset-0 z-0">
-                    <Image
-                        src="/slider.jpg"
-                        alt="Community coming together to build a drug-free future"
-                        fill
-                        sizes="100vw"
-                        quality={90}
-                        className="object-cover object-center opacity-60"
-                        priority
+                    <CrowdCanvas
+                        src="/open-peeps-sheet.png"
+                        rows={15}
+                        cols={7}
+                        className="absolute inset-0 h-full w-full"
                     />
-                    {/* Gradient overlay for reliable text contrast */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/25" />
                 </div>
 
-                {/* Main Content Container */}
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                    {/* Left side content */}
-                    <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-                        <div className="lg:w-1/2 text-left">
-                            {/* Hero Heading */}
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight mb-6">
-                                Stand Strong, Stay Awake,<br />
-                                Save Youth
-                            </h1>
-                        </div>
-
-                        {/* Right side - Be Brave Report Peddlers */}
-                        <div className="lg:w-1/2 text-center lg:text-right">
+                {/* Main Content Overlay - Positioned Above Animation */}
+                <div className="absolute top-8 left-0 right-0 z-20">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+                            {/* Left side - Stand Strong, Stay Awake, Save Youth */}
+                            <div className="lg:w-1/2 text-center lg:text-left">
+                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+                                    <span className="text-primary">Stand Strong, Stay Awake,</span><br />
+                                    <span className="text-primary">Save Youth</span>
+                                </h1>
+                            </div>
                             
-                                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-6">
-                                    Be Brave.<br />
-                                    Report Peddlers.
+                            {/* Right side - Be Brave Report Peddlers */}
+                            <div className="lg:w-1/2 text-center lg:text-right">
+                                <h2 className="tagline text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+                                    <span className="text-primary">Be Brave.</span><br />
+                                    <span className="text-primary">Report Peddlers.</span>
                                 </h2>
                                 <Link
                                     href="/contact#report"
                                     aria-label="Report now, anonymously"
-                                    className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-xl transition-colors shadow-lg hover:shadow-xl text-lg"
+                                    className="button-primary inline-flex items-center justify-center gap-2 font-bold py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 text-base sm:text-lg shadow-[0_4px_12px_rgba(0,0,0,0.4)]"
                                 >
                                     <span>REPORT NOW</span>
                                     <svg className="w-5 h-5 opacity-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -101,6 +96,7 @@ const HeroBanner = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             
         </section>
     );
