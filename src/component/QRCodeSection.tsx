@@ -11,11 +11,11 @@ const QRCodeSection = () => {
         </h2>
         
         {/* QR Codes */}
-        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center">
+        <div className="flex flex-row gap-4 sm:gap-8 justify-center items-center">
           {/* Mangalore QR Code */}
           <div className="text-center">
             <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4">Mangalore</h3>
-            <div className="w-40 h-40 sm:w-48 sm:h-48 bg-white rounded-lg shadow-lg flex items-center justify-center border-2 border-gray-200 p-3 sm:p-4">
+            <div className="w-32 h-32 sm:w-48 sm:h-48 bg-white rounded-lg shadow-lg flex items-center justify-center border-2 border-gray-200 p-2 sm:p-4">
               <QRCodeGenerator 
                 text="https://tally.so/r/3jXOJx" 
                 size={160}
@@ -33,9 +33,9 @@ const QRCodeSection = () => {
           </div>
           
           {/* Udupi QR Code */}
-          <div className="text-center">
+          <div className="text-center ml-4">
             <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-3 sm:mb-4">Udupi</h3>
-            <div className="w-40 h-40 sm:w-48 sm:h-48 bg-white rounded-lg shadow-lg flex items-center justify-center border-2 border-gray-200 p-3 sm:p-4">
+            <div className="w-32 h-32 sm:w-48 sm:h-48 bg-white rounded-lg shadow-lg flex items-center justify-center border-2 border-gray-200 p-2 sm:p-4">
               <QRCodeGenerator 
                 text="https://tally.so/r/nWVA5k" 
                 size={160}

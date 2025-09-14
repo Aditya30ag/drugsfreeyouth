@@ -16,12 +16,12 @@ const CampaignCard: React.FC<CampaignCardProps> = ({
 }) => {
   return (
     <div
-      className={`${bgColor} ${textColor} rounded-2xl sm:rounded-3xl p-6 sm:p-8 h-64 sm:h-80 flex flex-col justify-center items-center text-center shadow-md hover:shadow-xl transition-shadow duration-300`}
+      className={`${bgColor} ${textColor} rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 h-48 sm:h-64 lg:h-80 flex flex-col justify-center items-center text-center shadow-md hover:shadow-xl transition-shadow duration-300`}
     >
-      <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 leading-snug tracking-wide">
+      <h2 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-semibold mb-2 sm:mb-3 lg:mb-4 leading-snug tracking-wide">
         {title}
       </h2>
-      <p className="text-sm sm:text-base opacity-90 leading-relaxed max-w-xs">
+      <p className="text-xs sm:text-sm lg:text-base opacity-90 leading-relaxed max-w-xs">
         {description}
       </p>
     </div>
@@ -70,7 +70,7 @@ const AwakeParentsCampaign: React.FC = () => {
         </p>
 
         {/* Campaign Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {campaignData.map((campaign, index) => (
             <CampaignCard
               key={index}
