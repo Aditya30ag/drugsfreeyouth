@@ -12,7 +12,7 @@ import EnhancedFooter from '@/components/EnhancedFooter';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
       <AboutHero />
       <MissionVision />

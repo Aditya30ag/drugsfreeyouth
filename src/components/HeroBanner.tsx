@@ -4,11 +4,9 @@ import Link from 'next/link';
 
 const HeroBanner = () => {
     return (
-           <section className="relative min-h-screen flex flex-col o
-           verflow-hidden bg-gradient-to-b from-slate-950 via-slate-900 to-s
-           late-800">
+           <section className="relative min-h-screen flex flex-col overflow-hidden bg-background">
             {/* Logo Section at Top */}
-            <div className="relative z-20 bg-white py-8 md:py-12">
+            <div className="relative z-20 bg-background py-8 md:py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-center gap-12 md:gap-20 lg:gap-32">
                         {/* Drugs Free Youth Logo */}
@@ -67,7 +65,7 @@ const HeroBanner = () => {
                         priority
                     />
                     {/* Gradient overlay for reliable text contrast */}
-                    <div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-900/45 to-slate-900/25" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/45 to-black/25" />
                 </div>
 
                 {/* Main Content Container */}
@@ -92,7 +90,7 @@ const HeroBanner = () => {
                                 <Link
                                     href="/contact#report"
                                     aria-label="Report now, anonymously"
-                                    className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-colors shadow-lg hover:shadow-xl text-lg"
+                                    className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-4 px-8 rounded-xl transition-colors shadow-lg hover:shadow-xl text-lg"
                                 >
                                     <span>REPORT NOW</span>
                                     <svg className="w-5 h-5 opacity-90" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

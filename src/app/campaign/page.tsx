@@ -10,7 +10,7 @@ import WhyDifferent from '../../components/WhyDifferent';
 
 export default function Campaign() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
       <CampaignHero />
       <MovementSection />

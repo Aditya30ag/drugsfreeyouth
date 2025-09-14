@@ -45,68 +45,68 @@ const LookingAhead = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
             Looking Ahead
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             This is just the beginning. Our vision extends far beyond what we&apos;ve accomplished so far.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {futureInitiatives.map((initiative, index) => (
-            <div key={index} className={`${initiative.bgColor} rounded-3xl p-8 text-white transform hover:scale-105 transition-all duration-300`}>
-              <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-6">
+            <div key={index} className={`bg-card rounded-3xl p-8 text-foreground transform hover:scale-105 transition-all duration-300`}>
+              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-primary-foreground">
                 {initiative.icon}
               </div>
               <h3 className="text-xl font-bold mb-4">{initiative.title}</h3>
-              <p className="text-white/90 leading-relaxed text-sm">{initiative.description}</p>
+              <p className="text-muted-foreground leading-relaxed text-sm">{initiative.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-xl">
+        <div className="bg-card rounded-3xl p-8 sm:p-12 shadow-xl">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-8 text-center">
               Building a Sustainable Future
             </h3>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h4 className="font-bold text-xl text-gray-900 mb-4">Our 5-Year Vision</h4>
-                <ul className="space-y-3 text-gray-700">
+                <h4 className="font-bold text-xl text-foreground mb-4">Our 5-Year Vision</h4>
+                <ul className="space-y-3 text-muted-foreground">
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     50+ communities across Karnataka actively participating in drug prevention
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     10,000+ families equipped with prevention knowledge and tools
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     1,000+ youth ambassadors leading change in their schools and neighborhoods
                   </li>
                   <li className="flex items-start">
-                    <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
                     Comprehensive support network for families affected by drug abuse
                   </li>
                 </ul>
               </div>
               
-              <div className="bg-gradient-to-br from-blue-50 to-purple-100 rounded-2xl p-8">
-                <h4 className="font-bold text-xl text-gray-900 mb-4">Making It Happen</h4>
-                <p className="text-gray-700 leading-relaxed mb-6">
+              <div className="bg-muted rounded-2xl p-8">
+                <h4 className="font-bold text-xl text-foreground mb-4">Making It Happen</h4>
+                <p className="text-muted-foreground leading-relaxed mb-6">
                   Our expansion strategy focuses on sustainable, community-led initiatives that can thrive independently while maintaining our core values of collaboration, transparency, and measurable impact.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <button className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-200">
+                  <button className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors duration-200">
                     Join Our Expansion
                   </button>
-                  <button className="bg-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-purple-700 transition-colors duration-200">
+                  <button className="bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors duration-200">
                     Partner With Us
                   </button>
                 </div>

@@ -12,7 +12,7 @@ const Header = () => {
         { name: 'Contact', url: '/contact', icon: Phone },
     ];
 
-    // NavBar is fixed (bottom on mobile, top on >=sm)
+    // NavBar is fixed at the top across all breakpoints
     return <NavBar items={navItems} />;
 };
 

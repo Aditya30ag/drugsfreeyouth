@@ -55,34 +55,34 @@ const CampaignPartnerships = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Partnerships That Power Us
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
             We don&apos;t do this alone — and that&apos;s our strength.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 mb-12">
           {partnerCategories.map((category, index) => (
-            <div key={index} className={`${category.bgColor} rounded-2xl p-6 text-white text-center transform hover:scale-105 transition-all duration-300`}>
-              <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <div key={index} className={`bg-card rounded-2xl p-6 text-foreground text-center transform hover:scale-105 transition-all duration-300`}>
+              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-primary-foreground">
                 {category.icon}
               </div>
               <h3 className="text-lg font-bold mb-2">{category.title}</h3>
-              <p className="text-white/90 text-sm">{category.description}</p>
+              <p className="text-muted-foreground text-sm">{category.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-lg text-center">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+        <div className="bg-card rounded-3xl p-8 sm:p-12 shadow-lg text-center">
+          <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-6">
             A Coalition of Change-Makers
           </h3>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Together, we are building a coalition of change-makers who believe that the safety of our youth is non-negotiable. Every partnership strengthens our ability to protect and empower the next generation.
           </p>
         </div>

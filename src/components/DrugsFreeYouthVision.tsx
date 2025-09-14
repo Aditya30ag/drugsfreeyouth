@@ -32,35 +32,35 @@ const DrugsFreeYouthVision = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             The Birth of Drugs Free Youth
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
             The drug menace in India, particularly among the youth, is a public health and social stability crisis. Suhail recognized early on that solving it required more than sporadic campaigns. It required a movement — one that was collaborative, tech-enabled, and relentless in execution.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {achievements.map((achievement, index) => (
-            <div key={index} className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-6 text-center">
-              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <div key={index} className="bg-card rounded-2xl p-6 text-center">
+              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-primary-foreground">
                 {achievement.icon}
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">{achievement.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{achievement.description}</p>
+              <h3 className="text-xl font-bold text-foreground mb-4">{achievement.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{achievement.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center">
+        <div className="bg-primary rounded-2xl p-8 text-primary-foreground text-center">
           <h3 className="text-2xl font-bold mb-4">Impact in Thousands</h3>
-          <p className="text-blue-100 leading-relaxed">
+          <p className="text-primary-foreground/80 leading-relaxed">
             Reached thousands of youth and parents in just the first phase of operations.
           </p>
-          <p className="text-xl font-semibold mt-4 text-yellow-300">
+          <p className="text-xl font-semibold mt-4 text-primary-foreground">
             This isn&apos;t charity — it&apos;s a blueprint for societal resilience.
           </p>
         </div>

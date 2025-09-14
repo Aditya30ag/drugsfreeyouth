@@ -35,13 +35,13 @@ const LeadershipPhilosophy = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             A Leader with National Ambitions
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Suhail is not content with local success. His vision is to expand Drugs Free Youth across Karnataka and then nationally, turning it into a model that can be replicated in every Indian city.
           </p>
         </div>
@@ -50,19 +50,19 @@ const LeadershipPhilosophy = () => {
           <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Leadership Philosophy</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {pillars.map((pillar, index) => (
-              <div key={index} className={`${pillar.bgColor} rounded-2xl p-8 text-white text-center`}>
-                <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-6">
+              <div key={index} className={`bg-card rounded-2xl p-8 text-foreground text-center`}>
+                <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-6 text-primary-foreground">
                   {pillar.icon}
                 </div>
                 <h4 className="text-xl font-bold mb-4">{pillar.title}</h4>
-                <p className="text-white/90 leading-relaxed">{pillar.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{pillar.description}</p>
               </div>
             ))}
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-          <p className="text-lg text-gray-700 italic">
+        <div className="bg-card rounded-2xl p-8 shadow-lg text-center">
+          <p className="text-lg text-muted-foreground italic">
             &ldquo;This vision positions him not just as a regional reformer but as a national reform architect.&rdquo;
           </p>
         </div>

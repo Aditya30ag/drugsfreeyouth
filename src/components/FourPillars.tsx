@@ -49,30 +49,30 @@ const FourPillars = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Our Approach: 4 Pillars of Impact
           </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             We don&apos;t believe in symbolic gestures. Every initiative we run has a purpose, a structure, and measurable impact.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {pillars.map((pillar, index) => (
-            <div key={index} className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div key={index} className="bg-card rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex items-start mb-6">
-                <div className={`${pillar.bgColor} rounded-xl p-4 mr-6 flex-shrink-0`}>
+                <div className={`bg-primary rounded-xl p-4 mr-6 flex-shrink-0 text-primary-foreground`}>
                   {pillar.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3">{pillar.title}</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-3">{pillar.title}</h3>
                 </div>
               </div>
-              <p className="text-gray-700 leading-relaxed mb-4">{pillar.description}</p>
-              <p className="text-sm font-semibold text-blue-600 italic">{pillar.tagline}</p>
+              <p className="text-muted-foreground leading-relaxed mb-4">{pillar.description}</p>
+              <p className="text-sm font-semibold text-primary italic">{pillar.tagline}</p>
             </div>
           ))}
         </div>

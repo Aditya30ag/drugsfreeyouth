@@ -10,9 +10,9 @@ const PartnersEndorsements = () => {
         { name: "Karnataka State Police", type: "State Support" },
         { name: "Anti-Narcotics Cell", type: "Specialist Unit" }
       ],
-      bgColor: "bg-blue-600",
+      bgColor: "bg-primary",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
         </svg>
       )
@@ -25,9 +25,9 @@ const PartnersEndorsements = () => {
         { name: "St. Aloysius College", type: "Community Partner" },
         { name: "Canara College", type: "Outreach Partner" }
       ],
-      bgColor: "bg-green-600",
+      bgColor: "bg-primary",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"/>
         </svg>
       )
@@ -40,9 +40,9 @@ const PartnersEndorsements = () => {
         { name: "Rotary Club Mangalore", type: "Service Partner" },
         { name: "Lions Club Udupi", type: "Community Service" }
       ],
-      bgColor: "bg-purple-600",
+      bgColor: "bg-primary",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
           <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
         </svg>
       )
@@ -55,9 +55,9 @@ const PartnersEndorsements = () => {
         { name: "KMC Hospital Mangalore", type: "Healthcare Partner" },
         { name: "Manipal Hospital", type: "Medical Support" }
       ],
-      bgColor: "bg-red-600",
+      bgColor: "bg-primary",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm3 5a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1zm0 3a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clipRule="evenodd"/>
         </svg>
       )
@@ -86,18 +86,18 @@ const PartnersEndorsements = () => {
   ];
 
   return (
-    <section className="bg-white py-12 sm:py-16 px-4 sm:px-6">
+    <section className="bg-background py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
             Our Partners & Endorsements
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
             Supported by the Mangaluru City Police and trusted by leading community organizations. Together, we&apos;re building a network of change.
           </p>
-          <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-2xl p-6 max-w-4xl mx-auto">
-            <p className="text-lg font-semibold text-gray-800">
+          <div className="bg-muted rounded-2xl p-6 max-w-4xl mx-auto">
+            <p className="text-lg font-semibold text-foreground">
               &ldquo;A collaborative effort between law enforcement, educational institutions, healthcare providers, and community organizations to create a drug-free society.&rdquo;
             </p>
           </div>
@@ -106,7 +106,7 @@ const PartnersEndorsements = () => {
         {/* Partners Grid */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {partners.map((partnerCategory, index) => (
-            <div key={index} className={`${partnerCategory.bgColor} rounded-2xl p-4 sm:p-5 text-white transition-all duration-300 hover:shadow-xl ${
+            <div key={index} className={`${partnerCategory.bgColor} rounded-2xl p-4 sm:p-5 text-primary-foreground transition-all duration-300 hover:shadow-xl ${
               index % 4 === 0 || index % 4 === 3 
                 ? 'ring-2 ring-white/30' 
                 : 'ring-1 ring-white/20'
@@ -131,27 +131,27 @@ const PartnersEndorsements = () => {
 
         {/* Endorsements Section */}
         <div className="mb-12">
-          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">
+          <h3 className="text-xl sm:text-2xl font-bold text-foreground text-center mb-8">
             What Leaders Are Saying
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {endorsements.map((endorsement, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div key={index} className="bg-card rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <div className="mb-4">
-                  <svg className="w-6 h-6 text-blue-500 mb-3" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 text-primary mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                   </svg>
-                  <p className="text-gray-700 leading-relaxed italic text-sm">
+                  <p className="text-muted-foreground leading-relaxed italic text-sm">
                     &ldquo;{endorsement.quote}&rdquo;
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                    <span className="text-blue-600 font-semibold text-sm">{endorsement.author.charAt(0)}</span>
+                  <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center mr-3">
+                    <span className="text-foreground font-semibold text-sm">{endorsement.author.charAt(0)}</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 text-xs">{endorsement.author}</h4>
-                    <p className="text-gray-600 text-xs">{endorsement.organization}</p>
+                    <h4 className="font-semibold text-foreground text-xs">{endorsement.author}</h4>
+                    <p className="text-muted-foreground text-xs">{endorsement.organization}</p>
                   </div>
                 </div>
               </div>
@@ -160,10 +160,10 @@ const PartnersEndorsements = () => {
         </div>
 
         {/* Partnership Benefits */}
-        <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 sm:p-12 text-white mb-16">
+        <div className="bg-primary rounded-3xl p-8 sm:p-12 text-primary-foreground mb-16">
           <div className="text-center mb-8">
             <h3 className="text-2xl sm:text-3xl font-bold mb-4">Why Organizations Partner With Us</h3>
-            <p className="text-blue-100 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 max-w-2xl mx-auto">
               Our collaborative approach creates meaningful impact and positive change in communities across Karnataka.
             </p>
           </div>
@@ -175,7 +175,7 @@ const PartnersEndorsements = () => {
                 </svg>
               </div>
               <h4 className="font-bold text-lg mb-2">Proven Impact</h4>
-              <p className="text-blue-100 text-sm">Measurable results in drug prevention and community safety</p>
+              <p className="text-primary-foreground/80 text-sm">Measurable results in drug prevention and community safety</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -184,7 +184,7 @@ const PartnersEndorsements = () => {
                 </svg>
               </div>
               <h4 className="font-bold text-lg mb-2">Community Trust</h4>
-              <p className="text-blue-100 text-sm">Strong relationships with local communities and stakeholders</p>
+              <p className="text-primary-foreground/80 text-sm">Strong relationships with local communities and stakeholders</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -193,24 +193,24 @@ const PartnersEndorsements = () => {
                 </svg>
               </div>
               <h4 className="font-bold text-lg mb-2">Transparent Operations</h4>
-              <p className="text-blue-100 text-sm">Clear reporting and accountability in all our initiatives</p>
+              <p className="text-primary-foreground/80 text-sm">Clear reporting and accountability in all our initiatives</p>
             </div>
           </div>
         </div>
 
         {/* Call to Partner */}
-        <div className="text-center bg-gray-50 rounded-3xl p-8 sm:p-12">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-4">
+        <div className="text-center bg-muted rounded-3xl p-8 sm:p-12">
+          <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
             Join Our Partnership Network
           </h3>
-          <p className="text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
             Whether you represent a school, healthcare organization, business, or NGO, there&apos;s a place for you in our mission to create drug-free communities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200">
+            <button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-8 rounded-xl transition-colors duration-200">
               Become a Partner
             </button>
-            <button className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200">
+            <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-3 px-8 rounded-xl transition-colors duration-200">
               Download Partnership Info
             </button>
           </div>

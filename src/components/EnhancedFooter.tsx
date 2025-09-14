@@ -5,31 +5,31 @@ const EnhancedFooter: React.FC = () => {
   // Floating scroll-to-top removed to avoid overlapping the chat widget.
 
   return (
-    <footer className="relative bg-white text-gray-800">
+    <footer className="relative bg-background text-foreground">
 
       {/* Footer Content */}
-      <div className="py-12 sm:py-16 px-4 sm:px-6 bg-gray-50">
+      <div className="py-12 sm:py-16 px-4 sm:px-6 bg-muted">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* About Section */}
             <div className="lg:col-span-2">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">
+              <h3 className="text-xl font-bold mb-4 text-foreground">
                 Drugs Free Youth
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 A community-driven movement dedicated to protecting our future
                 generations through awareness, action, and accountability.
                 Together with parents, police, and community leaders, we&apos;re
                 building a drug-free society.
               </p>
               <div className="flex space-x-4">
-                <button className="bg-blue-600 p-3 rounded-full hover:bg-blue-700 text-white transition-colors duration-200">
+                <button className="bg-primary p-3 rounded-full hover:bg-primary/90 text-primary-foreground transition-colors duration-200">
                   T
                 </button>
-                <button className="bg-sky-500 p-3 rounded-full hover:bg-sky-600 text-white transition-colors duration-200">
+                <button className="bg-primary p-3 rounded-full hover:bg-primary/90 text-primary-foreground transition-colors duration-200">
                   X
                 </button>
-                <button className="bg-green-500 p-3 rounded-full hover:bg-green-600 text-white transition-colors duration-200">
+                <button className="bg-primary p-3 rounded-full hover:bg-primary/90 text-primary-foreground transition-colors duration-200">
                   W
                 </button>
               </div>
@@ -37,12 +37,12 @@ const EnhancedFooter: React.FC = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-semibold mb-4 text-gray-900">Quick Actions</h4>
+              <h4 className="font-semibold mb-4 text-foreground">Quick Actions</h4>
               <ul className="space-y-3">
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                   >
                     Report Drug Activity
                   </a>
@@ -50,7 +50,7 @@ const EnhancedFooter: React.FC = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                   >
                     Volunteer with Us
                   </a>
@@ -58,7 +58,7 @@ const EnhancedFooter: React.FC = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                   >
                     Download Resources
                   </a>
@@ -66,7 +66,7 @@ const EnhancedFooter: React.FC = () => {
                 <li>
                   <a
                     href="#"
-                    className="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+                    className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                   >
                     Get Help Now
                   </a>
@@ -76,8 +76,8 @@ const EnhancedFooter: React.FC = () => {
 
             {/* Contact Info */}
             <div>
-              <h4 className="font-semibold mb-4 text-gray-900">Contact Us</h4>
-              <div className="space-y-3 text-gray-600">
+              <h4 className="font-semibold mb-4 text-foreground">Contact Us</h4>
+              <div className="space-y-3 text-muted-foreground">
                 <div>Mangalore & Udupi, Karnataka</div>
                 <div>info@drugsfreeyouth.org</div>
                 <div>+91-824-220-9000</div>
@@ -86,28 +86,28 @@ const EnhancedFooter: React.FC = () => {
           </div>
 
           {/* Bottom Bar */}
-          <div className="border-t border-gray-300 pt-8">
+          <div className="border-t border-border pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="text-gray-500 text-sm mb-4 md:mb-0">
+              <div className="text-muted-foreground text-sm mb-4 md:mb-0">
                 © 2024 Drugs Free Youth. All rights reserved. | A MakeAChange
                 Foundation Initiative
               </div>
               <div className="flex space-x-6 text-sm">
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Privacy Policy
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Terms of Service
                 </a>
                 <a
                   href="#"
-                  className="text-gray-500 hover:text-gray-900 transition-colors duration-200"
+                  className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Transparency Report
                 </a>

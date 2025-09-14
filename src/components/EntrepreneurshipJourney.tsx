@@ -49,34 +49,34 @@ const EntrepreneurshipJourney = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
             Entrepreneurship as a Force for Change
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Suhail&apos;s career has always revolved around building sustainable ventures that deliver both profit and purpose.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {ventures.map((venture, index) => (
-            <div key={index} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex items-start">
-              <div className={`${venture.bgColor} rounded-xl p-4 mr-6 flex-shrink-0`}>
+            <div key={index} className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 flex items-start">
+              <div className={`bg-primary rounded-xl p-4 mr-6 flex-shrink-0 text-primary-foreground`}>
                 {venture.icon}
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-1">{venture.title}</h3>
-                <p className="text-blue-600 font-medium text-sm mb-3">{venture.role}</p>
-                <p className="text-gray-600">{venture.description}</p>
+                <h3 className="text-xl font-bold text-foreground mb-1">{venture.title}</h3>
+                <p className="text-primary font-medium text-sm mb-3">{venture.role}</p>
+                <p className="text-muted-foreground">{venture.description}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="bg-white rounded-2xl p-8 shadow-lg">
-          <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto italic">
+        <div className="bg-card rounded-2xl p-8 shadow-lg">
+          <p className="text-center text-lg text-muted-foreground max-w-3xl mx-auto italic">
             &ldquo;This track record showcases a leader who doesn&apos;t just talk about impact — he builds the systems that create it.&rdquo;
           </p>
         </div>
