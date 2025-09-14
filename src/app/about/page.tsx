@@ -8,7 +8,6 @@ import FounderProfile from '../../component/FounderProfile';
 import ImpactNumbers from '../../component/ImpactNumbers';
 import Partnerships from '../../component/Partnerships';
 import LookingAhead from '../../component/LookingAhead';
-import CallToAction from '../../component/CallToAction';
 import EnhancedFooter from '@/component/EnhancedFooter';
 
 export default function About() {
