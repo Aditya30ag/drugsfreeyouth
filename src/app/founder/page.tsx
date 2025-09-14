@@ -7,6 +7,7 @@ import FounderImpact from '../../component/FounderImpact';
 import FounderMessage from '../../component/FounderMessage';
 import BeyondSocialChange from '../../component/BeyondSocialChange';
 import FounderInvitation from '../../component/FounderInvitation';
+import EnhancedFooter from '@/component/EnhancedFooter';
 
 export default function Founder() {
   return (
@@ -19,7 +20,7 @@ export default function Founder() {
       <FounderImpact />
       <FounderMessage />
       <BeyondSocialChange />
-      <FounderInvitation />
+      <EnhancedFooter/>
     </div>
   );
 }

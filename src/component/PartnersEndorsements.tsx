@@ -104,19 +104,23 @@ const PartnersEndorsements = () => {
         </div>
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {partners.map((partnerCategory, index) => (
-            <div key={index} className={`${partnerCategory.bgColor} rounded-2xl p-5 text-white`}>
-              <div className="flex items-center mb-4">
-                <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mr-3">
+            <div key={index} className={`${partnerCategory.bgColor} rounded-2xl p-4 sm:p-5 text-white transition-all duration-300 hover:shadow-xl ${
+              index % 4 === 0 || index % 4 === 3 
+                ? 'ring-2 ring-white/30' 
+                : 'ring-1 ring-white/20'
+            }`}>
+              <div className="flex items-center mb-3 sm:mb-4">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-white/20 rounded-lg flex items-center justify-center mr-2 sm:mr-3">
                   {partnerCategory.icon}
                 </div>
-                <h3 className="text-base sm:text-lg font-bold">{partnerCategory.category}</h3>
+                <h3 className="text-sm sm:text-base md:text-lg font-bold leading-tight">{partnerCategory.category}</h3>
               </div>
-              <div className="space-y-2">
+              <div className="space-y-1.5 sm:space-y-2">
                 {partnerCategory.organizations.map((org, orgIndex) => (
-                  <div key={orgIndex} className="bg-white/10 rounded-lg p-3 hover:bg-white/20 transition-colors duration-200">
-                    <h4 className="font-semibold text-xs sm:text-sm mb-0.5">{org.name}</h4>
+                  <div key={orgIndex} className="bg-white/10 rounded-lg p-2 sm:p-3 hover:bg-white/20 transition-colors duration-200">
+                    <h4 className="font-semibold text-xs sm:text-sm mb-0.5 leading-tight">{org.name}</h4>
                     <p className="text-xs text-white/70">{org.type}</p>
                   </div>
                 ))}

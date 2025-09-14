@@ -165,30 +165,34 @@ const ResourcesEducation = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-12">
             Myths vs Facts
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {mythsFacts.map((item, index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
-                <div className="mb-6">
-                  <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-3">
-                      <svg className="w-4 h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+              <div key={index} className={`rounded-2xl p-4 sm:p-6 md:p-8 shadow-lg transition-all duration-300 hover:shadow-xl ${
+                index % 4 === 0 || index % 4 === 3 
+                  ? 'bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200' 
+                  : 'bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200'
+              }`}>
+                <div className="mb-4 sm:mb-6">
+                  <div className="flex items-center mb-2 sm:mb-3">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-red-100 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd"/>
                       </svg>
                     </div>
-                    <span className="font-semibold text-red-600">MYTH</span>
+                    <span className="font-semibold text-red-600 text-xs sm:text-sm">MYTH</span>
                   </div>
-                  <p className="text-gray-700 italic">&ldquo;{item.myth}&rdquo;</p>
+                  <p className="text-gray-700 italic text-sm sm:text-base leading-relaxed">&ldquo;{item.myth}&rdquo;</p>
                 </div>
                 <div>
-                  <div className="flex items-center mb-3">
-                    <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                      <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <div className="flex items-center mb-2 sm:mb-3">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-green-100 rounded-full flex items-center justify-center mr-2 sm:mr-3">
+                      <svg className="w-3 h-3 sm:w-4 sm:h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"/>
                       </svg>
                     </div>
-                    <span className="font-semibold text-green-600">FACT</span>
+                    <span className="font-semibold text-green-600 text-xs sm:text-sm">FACT</span>
                   </div>
-                  <p className="text-gray-700 font-medium">{item.fact}</p>
+                  <p className="text-gray-700 font-medium text-sm sm:text-base leading-relaxed">{item.fact}</p>
                 </div>
               </div>
             ))}
@@ -200,22 +204,20 @@ const ResourcesEducation = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-12">
             Emergency Helplines & Support
           </h3>
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 sm:p-12 text-white mb-8">
-            <div className="text-center mb-8">
-              <h4 className="text-xl sm:text-2xl font-bold mb-2">Need Help Now?</h4>
-              <p className="text-blue-100">Don&apos;t wait. Reach out to these confidential support services.</p>
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-6 sm:p-8 md:p-12 text-white mb-8">
+            <div className="text-center mb-6 sm:mb-8">
+              <h4 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">Need Help Now?</h4>
+              <p className="text-blue-100 text-sm sm:text-base">Don&apos;t wait. Reach out to these confidential support services.</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6">
               {helplines.map((helpline, index) => (
-                <div key={index} className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 hover:bg-white/20 transition-colors duration-200">
-                  <div className="flex items-start justify-between mb-3">
-                    <h5 className="font-bold text-lg">{helpline.name}</h5>
-                    <div className="bg-green-400 text-green-800 px-2 py-1 rounded-full text-xs font-semibold">
-                      {helpline.available}
-                    </div>
-                  </div>
-                  <div className="text-2xl font-bold mb-2 text-yellow-300">{helpline.number}</div>
-                  <p className="text-blue-100 text-sm">{helpline.description}</p>
+                <div key={index} className={`backdrop-blur-sm rounded-2xl p-4 sm:p-6 hover:bg-white/20 transition-all duration-300 ${
+                  index % 4 === 0 || index % 4 === 3 
+                    ? 'bg-white/15 border border-white/20' 
+                    : 'bg-white/10 border border-white/10'
+                }`}>
+                  <div className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-yellow-300">{helpline.number}</div>
+                  <p className="text-blue-100 text-xs sm:text-sm leading-relaxed">{helpline.description}</p>
                 </div>
               ))}
             </div>
@@ -223,53 +225,69 @@ const ResourcesEducation = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="bg-white rounded-3xl p-8 sm:p-12 shadow-lg">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-8">
+        <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-lg">
+          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-6 sm:mb-8">
             Quick Access Links
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg ${
+              0 % 4 === 0 || 0 % 4 === 3 
+                ? 'bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200' 
+                : 'bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200'
+            }`}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-800 mb-2">Treatment Centers</h4>
-              <p className="text-gray-600 text-sm mb-4">Find nearby rehabilitation facilities</p>
-              <button className="text-blue-600 font-semibold hover:underline">Find Centers</button>
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Treatment Centers</h4>
+              <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Find nearby rehabilitation facilities</p>
+              <button className="text-blue-600 font-semibold hover:underline text-xs sm:text-sm">Find Centers</button>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg ${
+              1 % 4 === 0 || 1 % 4 === 3 
+                ? 'bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200' 
+                : 'bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200'
+            }`}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-800 mb-2">Support Groups</h4>
-              <p className="text-gray-600 text-sm mb-4">Connect with others in recovery</p>
-              <button className="text-green-600 font-semibold hover:underline">Join Groups</button>
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Support Groups</h4>
+              <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Connect with others in recovery</p>
+              <button className="text-green-600 font-semibold hover:underline text-xs sm:text-sm">Join Groups</button>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg ${
+              2 % 4 === 0 || 2 % 4 === 3 
+                ? 'bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200' 
+                : 'bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200'
+            }`}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-800 mb-2">Events Calendar</h4>
-              <p className="text-gray-600 text-sm mb-4">Upcoming awareness programs</p>
-              <button className="text-purple-600 font-semibold hover:underline">View Events</button>
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Events Calendar</h4>
+              <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Upcoming awareness programs</p>
+              <button className="text-purple-600 font-semibold hover:underline text-xs sm:text-sm">View Events</button>
             </div>
 
-            <div className="text-center">
-              <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg ${
+              3 % 4 === 0 || 3 % 4 === 3 
+                ? 'bg-gradient-to-br from-blue-50 to-indigo-100 border border-blue-200' 
+                : 'bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200'
+            }`}>
+              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-red-100 rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h4 className="font-semibold text-gray-800 mb-2">Report Activity</h4>
-              <p className="text-gray-600 text-sm mb-4">Anonymous drug activity reporting</p>
-              <button className="text-red-600 font-semibold hover:underline">Report Now</button>
+              <h4 className="font-semibold text-gray-800 mb-2 text-sm sm:text-base">Report Activity</h4>
+              <p className="text-gray-600 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Anonymous drug activity reporting</p>
+              <button className="text-red-600 font-semibold hover:underline text-xs sm:text-sm">Report Now</button>
             </div>
           </div>
         </div>

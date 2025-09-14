@@ -9,7 +9,7 @@ const MovementSection = () => {
             Drug abuse is no longer a hidden problem. It&apos;s in our schools, our colleges, our neighborhoods. It steals futures, destroys families, and fuels crime.
           </p>
           
-          <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 sm:p-12 text-white mb-12">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl p-8 sm:p-12 text-white mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
               We refuse to stand by.
             </h2>
