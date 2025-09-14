@@ -1,20 +1,22 @@
-﻿import Header from '../../component/Header';
-import AboutHero from '../../component/AboutHero';
-import MissionVision from '../../component/MissionVision';
-import OurStory from '../../component/OurStory';
-import WhyThisMatters from '../../component/WhyThisMatters';
-import HowWeWork from '../../component/HowWeWork';
-import FounderProfile from '../../component/FounderProfile';
-import ImpactNumbers from '../../component/ImpactNumbers';
-import Partnerships from '../../component/Partnerships';
-import LookingAhead from '../../component/LookingAhead';
-import EnhancedFooter from '@/component/EnhancedFooter';
+﻿import Header from '../../components/Header';
+import AboutHero from '../../components/AboutHero';
+import MissionVision from '../../components/MissionVision';
+import OurStory from '../../components/OurStory';
+import WhyThisMatters from '../../components/WhyThisMatters';
+import HowWeWork from '../../components/HowWeWork';
+import FounderProfile from '../../components/FounderProfile';
+import ImpactNumbers from '../../components/ImpactNumbers';
+import Partnerships from '../../components/Partnerships';
+import LookingAhead from '../../components/LookingAhead';
+import EnhancedFooter from '@/components/EnhancedFooter';
+import AboutImageSlider from '@/components/AboutImageSlider';
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <Header />
       <AboutHero />
+      <AboutImageSlider />
       <MissionVision />
       <OurStory />
       <WhyThisMatters />

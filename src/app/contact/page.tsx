@@ -1,6 +1,6 @@
 ﻿import React from 'react';
-import Header from '../../component/Header';
-import EnhancedFooter from '../../component/EnhancedFooter';
+import Header from '../../components/Header';
+import EnhancedFooter from '../../components/EnhancedFooter';
 import ContactHero from './ContactHero';
 import ContactInfo from './ContactInfo';
 import ReportingSection from './ReportingSection';
@@ -11,7 +11,7 @@ import QuickLinks from './QuickLinks';
 
 export default function ContactPage() {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-background">
             <Header />
             
             <main>

@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ExpandableChatDemo from "@/components/ExpandableChatDemo";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,12 +18,16 @@ export const metadata: Metadata = {
   description: "Join our mission to create a drug-free nation. Report drug peddlers anonymously and help save our youth from the menace of drugs. Partnership with MakeAChange Foundation and Mangaluru City Police.",
   keywords: "drug free youth, anti-drug campaign, report drug peddlers, drug awareness, youth safety, Mangaluru police, MakeAChange Foundation",
   authors: [{ name: "Drugs Free Youth" }],
-  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "Drugs Free Youth - Stand Strong, Stay Awake, Save Youth",
     description: "Join our mission to create a drug-free nation. Report drug peddlers anonymously.",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -36,6 +41,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <ExpandableChatDemo />
       </body>
     </html>
   );
