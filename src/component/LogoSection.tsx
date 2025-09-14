@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const LogoSection = () => {
   return (
-    <section className="bg-white pt-6 sm:pt-10 pb-6 sm:pb-0">
+    <section>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div
           className="flex flex-row flex-wrap items-center justify-center 
@@ -11,12 +11,12 @@ const LogoSection = () => {
         >
           {/* Drugs Free Youth Logo */}
           <div className="flex flex-col items-center px-2 sm:px-4 w-auto">
-            <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+          <div className="w-12 h-12 relative">
               <Image
                 src="/1.jpg"
                 alt="Drugs Free Youth Logo"
-                width={160}
-                height={160}
+                width={48}
+                height={48}
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
@@ -24,12 +24,12 @@ const LogoSection = () => {
 
           {/* MakeAChange Foundation Logo */}
           <div className="flex flex-col items-center px-2 sm:px-4 w-auto">
-            <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+          <div className="w-12 h-12 relative">
               <Image
                 src="/2.jpg"
                 alt="MakeAChange Foundation Logo"
-                width={160}
-                height={160}
+                width={48}
+                height={48}
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
@@ -37,12 +37,12 @@ const LogoSection = () => {
 
           {/* Mangaluru City Police Logo */}
           <div className="flex flex-col items-center px-2 sm:px-4 w-auto">
-            <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+          <div className="w-12 h-12 relative">
               <Image
                 src="/3.jpg"
                 alt="Mangaluru City Police Logo"
-                width={160}
-                height={160}
+                width={48}
+                height={48}
                 className="w-full h-full object-contain rounded-lg"
               />
             </div>
