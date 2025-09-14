@@ -7,7 +7,7 @@ const FounderMessage = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              A Founder's Message
+              A Founder&apos;s Message
             </h2>
           </div>
 
@@ -18,7 +18,7 @@ const FounderMessage = () => {
               </svg>
               
               <blockquote className="text-xl sm:text-2xl text-gray-700 leading-relaxed mb-8 italic">
-                "The drug menace is not just about addiction — it's about lost futures, broken families, and weakened communities. My role is to connect every stakeholder — from parents to police — and ensure we respond as one. This movement is my commitment to protect the next generation and to restore faith in the idea that together, we can overcome anything."
+                &ldquo;The drug menace is not just about addiction — it&apos;s about lost futures, broken families, and weakened communities. My role is to connect every stakeholder — from parents to police — and ensure we respond as one. This movement is my commitment to protect the next generation and to restore faith in the idea that together, we can overcome anything.&rdquo;
               </blockquote>
               
               <div className="flex items-center justify-center">

@@ -29,7 +29,7 @@ const WhyDifferent = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Why We're Different
+            Why We&apos;re Different
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
             Most campaigns stop at slogans. We go beyond:
@@ -59,7 +59,7 @@ const WhyDifferent = () => {
             Action with Teeth
           </h3>
           <p className="text-red-100 text-lg max-w-3xl mx-auto leading-relaxed">
-            This isn't awareness for awareness's sake. This is action with teeth. We combine technology, community engagement, and institutional partnerships to create lasting change that saves lives and protects futures.
+            This isn&apos;t awareness for awareness&apos;s sake. This is action with teeth. We combine technology, community engagement, and institutional partnerships to create lasting change that saves lives and protects futures.
           </p>
         </div>
       </div>

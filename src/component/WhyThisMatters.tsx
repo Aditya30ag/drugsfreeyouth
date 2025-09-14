@@ -114,7 +114,7 @@ const WhyThisMatters = () => {
             </div>
 
             <div className="mt-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-6 text-white text-center">
-              <h4 className="font-bold text-xl mb-4">But There's Hope</h4>
+              <h4 className="font-bold text-xl mb-4">But There&apos;s Hope</h4>
               <p className="text-blue-100 leading-relaxed">
                 We believe prevention is possible — but only if every parent, teacher, neighbor, and citizen joins the effort. When communities unite with a common purpose, change becomes inevitable.
               </p>

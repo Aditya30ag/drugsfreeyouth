@@ -16,7 +16,7 @@ const MissionVision = () => {
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">Our Mission</h2>
             </div>
             <blockquote className="text-xl sm:text-2xl font-semibold text-blue-800 mb-6 italic">
-              "To build a drug-free future by uniting parents, educators, communities, and law enforcement in proactive action against drug abuse."
+              &ldquo;To build a drug-free future by uniting parents, educators, communities, and law enforcement in proactive action against drug abuse.&rdquo;
             </blockquote>
             <p className="text-gray-700 leading-relaxed mb-6">
               We believe that no child should lose their future to addiction. Our mission is to protect the next generation through awareness, prevention, early intervention, and community mobilization.

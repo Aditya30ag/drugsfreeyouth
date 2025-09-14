@@ -81,7 +81,7 @@ const QuickLinks = () => {
                             Need Something Else?
                         </h3>
                         <p className="text-gray-600 mb-6">
-                            Can't find what you're looking for? Our team is here to help with any questions or specific needs you might have.
+                            Can&apos;t find what you&apos;re looking for? Our team is here to help with any questions or specific needs you might have.
                         </p>
                         <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200">
                             Contact Our Team

@@ -1,6 +1,4 @@
 ﻿import Header from '../../component/Header';
-import LogoSection from '../../component/LogoSection';
-import EnhancedFooter from '../../component/EnhancedFooter';
 import AboutHero from '../../component/AboutHero';
 import MissionVision from '../../component/MissionVision';
 import OurStory from '../../component/OurStory';

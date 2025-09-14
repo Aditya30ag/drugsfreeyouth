@@ -10,7 +10,7 @@ const ImpactSnapshot = () => {
                         Why This Matters
                     </h2>
                     <p className="text-lg sm:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-                        Drug abuse is not just a crime — it's a crisis. Studies show that over 35% of young people experiment with narcotics before 21. Without intervention, the cycle of addiction breaks families, destroys careers, and threatens our communities. This campaign is here to stop it.
+                        Drug abuse is not just a crime — it&apos;s a crisis. Studies show that over 35% of young people experiment with narcotics before 21. Without intervention, the cycle of addiction breaks families, destroys careers, and threatens our communities. This campaign is here to stop it.
                     </p>
                 </div>
 

@@ -5,7 +5,6 @@ interface ResourceItemProps {
   description: string;
   type: string;
   icon: React.ReactNode;
-  downloadUrl?: string;
   bgColor: string;
 }
 
@@ -14,7 +13,6 @@ const ResourceItem: React.FC<ResourceItemProps> = ({
   description,
   type,
   icon,
-  downloadUrl,
   bgColor
 }) => {
   return (
@@ -179,7 +177,7 @@ const ResourcesEducation = () => {
                     </div>
                     <span className="font-semibold text-red-600">MYTH</span>
                   </div>
-                  <p className="text-gray-700 italic">"{item.myth}"</p>
+                  <p className="text-gray-700 italic">&ldquo;{item.myth}&rdquo;</p>
                 </div>
                 <div>
                   <div className="flex items-center mb-3">
@@ -205,7 +203,7 @@ const ResourcesEducation = () => {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 sm:p-12 text-white mb-8">
             <div className="text-center mb-8">
               <h4 className="text-xl sm:text-2xl font-bold mb-2">Need Help Now?</h4>
-              <p className="text-blue-100">Don't wait. Reach out to these confidential support services.</p>
+              <p className="text-blue-100">Don&apos;t wait. Reach out to these confidential support services.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {helplines.map((helpline, index) => (

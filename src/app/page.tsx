@@ -1,5 +1,4 @@
 ﻿import Header from '../component/Header';
-import LogoSection from '../component/LogoSection';
 import HeroBanner from '../component/HeroBanner';
 import QRCodeSection from '../component/QRCodeSection';
 import ImpactSnapshot from '../component/ImpactSnapshot';

@@ -56,7 +56,7 @@ const FounderProfile = () => {
 
               {/* Personal Quote */}
               <blockquote className="text-xl sm:text-2xl text-blue-800 italic leading-relaxed border-l-4 border-blue-500 pl-6 my-8">
-                "Every life saved from drugs is a future restored for our nation."
+                &ldquo;Every life saved from drugs is a future restored for our nation.&rdquo;
               </blockquote>
 
               <p className="text-gray-600 leading-relaxed">

@@ -25,7 +25,7 @@ const TestimonialCard: React.FC<TestimonialProps> = ({
           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
         </svg>
         <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6 italic">
-          "{quote}"
+          &ldquo;{quote}&rdquo;
         </p>
       </div>
       <div className="flex items-center">
@@ -184,7 +184,7 @@ const SuccessStories = () => {
             Your Story Could Be Next
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Whether you're a parent seeking support, a youth looking for guidance, or a community member wanting to make a difference, we're here to help you write your success story.
+            Whether you&apos;re a parent seeking support, a youth looking for guidance, or a community member wanting to make a difference, we&apos;re here to help you write your success story.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200">

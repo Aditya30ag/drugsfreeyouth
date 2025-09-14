@@ -62,7 +62,7 @@ const CampaignPartnerships = () => {
             Partnerships That Power Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            We don't do this alone — and that's our strength.
+            We don&apos;t do this alone — and that&apos;s our strength.
           </p>
         </div>
 

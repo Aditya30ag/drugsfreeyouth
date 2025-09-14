@@ -74,7 +74,7 @@ const HowWeWork = () => {
               Anonymous QR-Code Reporting System
             </h3>
             <p className="text-gray-700 leading-relaxed mb-8">
-              In addition to our four pillars, we've launched an innovative anonymous QR-code based reporting system in partnership with the police to ensure quick, safe, and accountable action against peddlers.
+              In addition to our four pillars, we&apos;ve launched an innovative anonymous QR-code based reporting system in partnership with the police to ensure quick, safe, and accountable action against peddlers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <div className="flex items-center text-gray-600">

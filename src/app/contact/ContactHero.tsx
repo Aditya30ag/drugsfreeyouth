@@ -8,10 +8,10 @@ const ContactHero = () => {
                     Contact
                 </h1>
                 <h2 className="text-2xl md:text-3xl font-semibold text-blue-800 mb-6">
-                    We're Here to Listen. We're Here to Act.
+                    We&apos;re Here to Listen. We&apos;re Here to Act.
                 </h2>
                 <p className="text-lg md:text-xl text-gray-700 mb-4 max-w-3xl mx-auto leading-relaxed">
-                    Whether you're a parent seeking guidance, a student looking for help, an institution wanting to partner, or a citizen ready to report — this is where you reach us.
+                    Whether you&apos;re a parent seeking guidance, a student looking for help, an institution wanting to partner, or a citizen ready to report — this is where you reach us.
                 </p>
                 <p className="text-lg text-gray-600 font-medium">
                     No message is too small. Every voice matters in building a drug-free future.

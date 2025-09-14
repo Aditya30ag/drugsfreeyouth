@@ -35,7 +35,7 @@ const OurStory = () => {
                     </svg>
                   </div>
                   <h3 className="font-bold text-gray-900 mb-2">The Realization</h3>
-                  <p className="text-gray-600 text-sm">Isolated awareness events weren't enough</p>
+                  <p className="text-gray-600 text-sm">Isolated awareness events weren&apos;t enough</p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
@@ -49,7 +49,7 @@ const OurStory = () => {
               </div>
 
               <p className="text-gray-700 leading-relaxed mb-6 text-lg">
-                When early reports of rising drug use among youth in Mangaluru and Udupi surfaced, founder <strong>Suhail Kandak</strong> realized that isolated awareness events weren't enough. The problem needed a movement – one that was collaborative, action-driven, and deeply rooted in the local context.
+                When early reports of rising drug use among youth in Mangaluru and Udupi surfaced, founder <strong>Suhail Kandak</strong> realized that isolated awareness events weren&apos;t enough. The problem needed a movement – one that was collaborative, action-driven, and deeply rooted in the local context.
               </p>
 
               <p className="text-gray-700 leading-relaxed mb-8 text-lg">
@@ -62,7 +62,7 @@ const OurStory = () => {
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
                   <div>
-                    <h4 className="font-bold text-xl mb-2">Today's Impact</h4>
+                    <h4 className="font-bold text-xl mb-2">Today&apos;s Impact</h4>
                     <p className="text-blue-100">
                       From a handful of volunteers to a recognized grassroots initiative reaching hundreds of parents, thousands of youth, and entire neighborhoods across Mangaluru and Udupi.
                     </p>

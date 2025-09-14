@@ -1,5 +1,4 @@
 ﻿import Header from '../../component/Header';
-import LogoSection from '../../component/LogoSection';
 import EnhancedFooter from '../../component/EnhancedFooter';
 import CampaignHero from '../../component/CampaignHero';
 import MovementSection from '../../component/MovementSection';

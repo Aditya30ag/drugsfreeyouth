@@ -56,7 +56,7 @@ const FourPillars = () => {
             Our Approach: 4 Pillars of Impact
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            We don't believe in symbolic gestures. Every initiative we run has a purpose, a structure, and measurable impact.
+            We don&apos;t believe in symbolic gestures. Every initiative we run has a purpose, a structure, and measurable impact.
           </p>
         </div>
 

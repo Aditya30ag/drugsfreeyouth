@@ -6,7 +6,7 @@ const MovementSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center">
           <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed mb-8">
-            Drug abuse is no longer a hidden problem. It's in our schools, our colleges, our neighborhoods. It steals futures, destroys families, and fuels crime.
+            Drug abuse is no longer a hidden problem. It&apos;s in our schools, our colleges, our neighborhoods. It steals futures, destroys families, and fuels crime.
           </p>
           
           <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 sm:p-12 text-white mb-12">

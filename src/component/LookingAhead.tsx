@@ -52,7 +52,7 @@ const LookingAhead = () => {
             Looking Ahead
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            This is just the beginning. Our vision extends far beyond what we've accomplished so far.
+            This is just the beginning. Our vision extends far beyond what we&apos;ve accomplished so far.
           </p>
         </div>
 

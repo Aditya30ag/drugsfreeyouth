@@ -56,7 +56,7 @@ const EntrepreneurshipJourney = () => {
             Entrepreneurship as a Force for Change
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Suhail's career has always revolved around building sustainable ventures that deliver both profit and purpose.
+            Suhail&apos;s career has always revolved around building sustainable ventures that deliver both profit and purpose.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const EntrepreneurshipJourney = () => {
 
         <div className="bg-white rounded-2xl p-8 shadow-lg">
           <p className="text-center text-lg text-gray-700 max-w-3xl mx-auto italic">
-            "This track record showcases a leader who doesn't just talk about impact — he builds the systems that create it."
+            &ldquo;This track record showcases a leader who doesn&apos;t just talk about impact — he builds the systems that create it.&rdquo;
           </p>
         </div>
       </div>

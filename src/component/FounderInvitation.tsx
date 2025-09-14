@@ -17,7 +17,7 @@ const FounderInvitation = () => {
             The Invitation
           </h2>
           <blockquote className="text-xl sm:text-2xl leading-relaxed max-w-4xl mx-auto italic mb-8">
-            "Join me in this mission. Whether you are a parent, teacher, student, policymaker, or entrepreneur — your role matters. Together, we can safeguard our youth, strengthen our nation, and build a legacy of resilience."
+            &ldquo;Join me in this mission. Whether you are a parent, teacher, student, policymaker, or entrepreneur — your role matters. Together, we can safeguard our youth, strengthen our nation, and build a legacy of resilience.&rdquo;
           </blockquote>
         </div>
 

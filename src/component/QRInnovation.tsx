@@ -10,7 +10,7 @@ const QRInnovation = () => {
               Breakthrough Innovation: QR-Code Reporting
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
-              For the first time in Karnataka, we've partnered with Mangaluru City Police and Udupi Police to launch QR-code based anonymous reporting.
+              For the first time in Karnataka, we&apos;ve partnered with Mangaluru City Police and Udupi Police to launch QR-code based anonymous reporting.
             </p>
           </div>
 

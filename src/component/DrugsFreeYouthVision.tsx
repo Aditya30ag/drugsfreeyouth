@@ -61,7 +61,7 @@ const DrugsFreeYouthVision = () => {
             Reached thousands of youth and parents in just the first phase of operations.
           </p>
           <p className="text-xl font-semibold mt-4 text-yellow-300">
-            This isn't charity — it's a blueprint for societal resilience.
+            This isn&apos;t charity — it&apos;s a blueprint for societal resilience.
           </p>
         </div>
       </div>

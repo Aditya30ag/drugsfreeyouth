@@ -17,7 +17,7 @@ const CampaignHero = () => {
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-12">
-            This Is More Than Awareness — It's a Movement
+            This Is More Than Awareness — It&apos;s a Movement
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-center">

@@ -94,11 +94,11 @@ const PartnersEndorsements = () => {
             Our Partners & Endorsements
           </h2>
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed mb-8">
-            Supported by the Mangaluru City Police and trusted by leading community organizations. Together, we're building a network of change.
+            Supported by the Mangaluru City Police and trusted by leading community organizations. Together, we&apos;re building a network of change.
           </p>
           <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-2xl p-6 max-w-4xl mx-auto">
             <p className="text-lg font-semibold text-gray-800">
-              "A collaborative effort between law enforcement, educational institutions, healthcare providers, and community organizations to create a drug-free society."
+              &ldquo;A collaborative effort between law enforcement, educational institutions, healthcare providers, and community organizations to create a drug-free society.&rdquo;
             </p>
           </div>
         </div>
@@ -138,7 +138,7 @@ const PartnersEndorsements = () => {
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                   </svg>
                   <p className="text-gray-700 leading-relaxed italic text-sm sm:text-base">
-                    "{endorsement.quote}"
+                    &ldquo;{endorsement.quote}&rdquo;
                   </p>
                 </div>
                 <div className="flex items-center">
@@ -200,7 +200,7 @@ const PartnersEndorsements = () => {
             Join Our Partnership Network
           </h3>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            Whether you represent a school, healthcare organization, business, or NGO, there's a place for you in our mission to create drug-free communities.
+            Whether you represent a school, healthcare organization, business, or NGO, there&apos;s a place for you in our mission to create drug-free communities.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
             <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition-colors duration-200">

@@ -63,7 +63,7 @@ const LeadershipPhilosophy = () => {
 
         <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
           <p className="text-lg text-gray-700 italic">
-            "This vision positions him not just as a regional reformer but as a national reform architect."
+            &ldquo;This vision positions him not just as a regional reformer but as a national reform architect.&rdquo;
           </p>
         </div>
       </div>

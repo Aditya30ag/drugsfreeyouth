@@ -63,7 +63,7 @@ const InstitutionalPartners = () => {
                     </h3>
                     <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
                         Join our network of institutional partners working together to create drug-free communities. 
-                        Let's combine our efforts for maximum impact.
+                        Let&apos;s combine our efforts for maximum impact.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                         <span className="text-gray-700 font-medium">📩 Write to us at:</span>

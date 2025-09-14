@@ -1,6 +1,4 @@
 ﻿import Header from '../../component/Header';
-import LogoSection from '../../component/LogoSection';
-import EnhancedFooter from '../../component/EnhancedFooter';
 import FounderHero from '../../component/FounderHero';
 import EntrepreneurshipJourney from '../../component/EntrepreneurshipJourney';
 import DrugsFreeYouthVision from '../../component/DrugsFreeYouthVision';

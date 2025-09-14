@@ -146,7 +146,7 @@ const CampaignPillars: React.FC = () => {
 
               {/* Personal Quote */}
               <blockquote className="text-xl sm:text-2xl text-gray-700 italic leading-relaxed border-l-4 border-blue-500 pl-6 my-8">
-                "I've seen too many young lives cut short because of drugs. This isn't just a campaign — it's a commitment to protect our children. Every parent, every citizen, has a role to play. Together, we can create a future where our youth are free to dream, build, and thrive."
+                &ldquo;I&apos;ve seen too many young lives cut short because of drugs. This isn&apos;t just a campaign — it&apos;s a commitment to protect our children. Every parent, every citizen, has a role to play. Together, we can create a future where our youth are free to dream, build, and thrive.&rdquo;
               </blockquote>
 
               <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
