@@ -18,13 +18,13 @@ const CampaignCard: React.FC<CampaignCardProps> = ({
 }) => {
   return (
     <div
-      className={`${bgColor} ${textColor} rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-10 h-64 sm:h-72 lg:h-80 flex flex-col justify-center items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105`}
+      className={`${bgColor} ${textColor} rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 min-h-[200px] sm:min-h-[220px] lg:min-h-[240px] flex flex-col justify-start items-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105`}
     >
-      {icon && <div className="mb-4 opacity-80">{icon}</div>}
-      <h2 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold mb-3 sm:mb-4 lg:mb-6 leading-snug tracking-wide">
+      {icon && <div className="mb-3 sm:mb-4 opacity-80">{icon}</div>}
+      <h2 className="text-base sm:text-lg lg:text-xl xl:text-2xl font-bold mb-2 sm:mb-3 leading-tight tracking-wide">
         {title}
       </h2>
-      <p className="text-sm sm:text-base lg:text-lg opacity-90 leading-relaxed max-w-xs">
+      <p className="text-xs sm:text-sm lg:text-base opacity-90 leading-relaxed flex-grow">
         {description}
       </p>
     </div>
@@ -83,17 +83,17 @@ const CampaignPillars: React.FC = () => {
     <div className="min-h-full bg-white pt-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 sm:mb-16">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Our 4 Pillars of Action
           </h1>
-          <p className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
+          <p className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed px-4">
             Our movement is powered by action on the ground. From faith-based outreach to parent awareness, from local street meets to large public rallies, every campaign is designed to empower families, inform communities, and inspire youth to take a stand.
           </p>
         </div>
 
         {/* Campaign Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12">
           {campaignData.map((campaign, index) => (
             <CampaignCard
               key={index}

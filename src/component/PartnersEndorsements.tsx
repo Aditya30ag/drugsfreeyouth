@@ -86,7 +86,7 @@ const PartnersEndorsements = () => {
   ];
 
   return (
-    <section className="bg-white py-16 sm:py-20 px-4 sm:px-6">
+    <section className="bg-white py-12 sm:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
@@ -104,19 +104,19 @@ const PartnersEndorsements = () => {
         </div>
 
         {/* Partners Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {partners.map((partnerCategory, index) => (
-            <div key={index} className={`${partnerCategory.bgColor} rounded-3xl p-6 sm:p-8 text-white`}>
-              <div className="flex items-center mb-6">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4">
+            <div key={index} className={`${partnerCategory.bgColor} rounded-2xl p-5 text-white`}>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mr-3">
                   {partnerCategory.icon}
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold">{partnerCategory.category}</h3>
+                <h3 className="text-base sm:text-lg font-bold">{partnerCategory.category}</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 {partnerCategory.organizations.map((org, orgIndex) => (
-                  <div key={orgIndex} className="bg-white/10 rounded-xl p-4 hover:bg-white/20 transition-colors duration-200">
-                    <h4 className="font-semibold text-sm sm:text-base mb-1">{org.name}</h4>
+                  <div key={orgIndex} className="bg-white/10 rounded-lg p-3 hover:bg-white/20 transition-colors duration-200">
+                    <h4 className="font-semibold text-xs sm:text-sm mb-0.5">{org.name}</h4>
                     <p className="text-xs text-white/70">{org.type}</p>
                   </div>
                 ))}
@@ -126,27 +126,27 @@ const PartnersEndorsements = () => {
         </div>
 
         {/* Endorsements Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 text-center mb-12">
+        <div className="mb-12">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-800 text-center mb-8">
             What Leaders Are Saying
           </h3>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {endorsements.map((endorsement, index) => (
-              <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="mb-6">
-                  <svg className="w-8 h-8 text-blue-500 mb-4" fill="currentColor" viewBox="0 0 24 24">
+              <div key={index} className="bg-gradient-to-br from-gray-50 to-white rounded-xl p-5 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="mb-4">
+                  <svg className="w-6 h-6 text-blue-500 mb-3" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
                   </svg>
-                  <p className="text-gray-700 leading-relaxed italic text-sm sm:text-base">
+                  <p className="text-gray-700 leading-relaxed italic text-sm">
                     &ldquo;{endorsement.quote}&rdquo;
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-blue-600 font-semibold text-lg">{endorsement.author.charAt(0)}</span>
+                  <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                    <span className="text-blue-600 font-semibold text-sm">{endorsement.author.charAt(0)}</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-800 text-sm">{endorsement.author}</h4>
+                    <h4 className="font-semibold text-gray-800 text-xs">{endorsement.author}</h4>
                     <p className="text-gray-600 text-xs">{endorsement.organization}</p>
                   </div>
                 </div>
