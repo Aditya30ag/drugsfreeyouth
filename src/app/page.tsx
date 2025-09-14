@@ -5,7 +5,6 @@ import QRCodeSection from '../component/QRCodeSection';
 import ImpactSnapshot from '../component/ImpactSnapshot';
 import CampaignPillars from '../component/CampaignPillars';
 import SuccessStories from '../component/SuccessStories';
-import HowYouCanHelp from '../component/HowYouCanHelp';
 import ResourcesEducation from '../component/ResourcesEducation';
 import PartnersEndorsements from '../component/PartnersEndorsements';
 import StatsSection from '../component/StatsSection';
@@ -35,8 +34,6 @@ export default function Home() {
       {/* 8. Success Stories & Testimonials (NEW) */}
       <SuccessStories />
       
-      {/* 9. How You Can Help - Multiple Engagement Options (NEW) */}
-      <HowYouCanHelp />
       
       {/* 10. Resources & Education - Guides + Myths vs Facts + Helplines (NEW) */}
       <ResourcesEducation />

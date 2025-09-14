@@ -80,7 +80,7 @@ const CampaignPillars: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-16 sm:py-20 px-4 sm:px-6">
+    <div className="min-h-full bg-white pt-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
