@@ -9,7 +9,7 @@ const Header = () => {
         { name: 'About Us', url: '/about', icon: Info },
         { name: 'Founder', url: '/founder', icon: User },
         { name: 'Campaign', url: '/campaign', icon: Megaphone },
-        { name: 'FAQ', url: '/faq', icon: HelpCircle },
+        { name: 'Resources', url: '/resources', icon: HelpCircle },
         { name: 'Contact', url: '/contact', icon: Phone },
     ];
 
