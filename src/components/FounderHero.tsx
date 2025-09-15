@@ -64,16 +64,6 @@ const FounderHero = () => {
                   className="rounded-2xl shadow-lg object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 bg-primary rounded-2xl p-4 shadow-lg">
-                <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                </svg>
-              </div>
-              <div className="absolute -top-4 -left-4 bg-primary rounded-2xl p-4 shadow-lg">
-                <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
-                </svg>
-              </div>
             </div>
           </div>
         </div>
