@@ -1,6 +1,6 @@
 ﻿"use client";
 import React from 'react';
-import { Home, Info, User, Megaphone, Phone } from 'lucide-react';
+import { Home, Info, User, Megaphone, Phone, HelpCircle } from 'lucide-react';
 import { NavBar } from "@/components/ui/tubelight-navbar";
 
 const Header = () => {
@@ -9,6 +9,7 @@ const Header = () => {
         { name: 'About Us', url: '/about', icon: Info },
         { name: 'Founder', url: '/founder', icon: User },
         { name: 'Campaign', url: '/campaign', icon: Megaphone },
+        { name: 'FAQ', url: '/faq', icon: HelpCircle },
         { name: 'Contact', url: '/contact', icon: Phone },
     ];
 
