@@ -11,6 +11,15 @@ const FAQIntro = () => {
                     </h1>
                     <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
                     
+                    {/* New Intro Paragraph */}
+                    <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6">
+                        If you&apos;re worried or you&apos;ve seen something suspicious — thank you for caring. 
+                        This FAQ explains how to report, what happens next, how we protect your privacy, 
+                        and exactly how to help a child you suspect is using drugs. If your situation is 
+                        an immediate emergency, call local emergency services now.
+                    </p>
+
+                    {/* Existing Email Line */}
                     <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
                         Answers to the questions we hear most often. If your question is not here, 
                         email{' '}
