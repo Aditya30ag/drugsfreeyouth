@@ -13,7 +13,7 @@ export default function ResourcesPage() {
         <div className="min-h-screen bg-background">
             <Header />
             
-            <main className="pt-20">
+            <main>
                 {/* Resources Hero Section */}
                 <ResourcesHero />
                 
