@@ -1,5 +1,6 @@
 ﻿import React from 'react';
 import Image from 'next/image';
+import { HeartHandshakeIcon, UsersIcon, UserCheckIcon } from 'lucide-react';
 
 interface TestimonialProps {
   quote: string;
@@ -84,9 +85,7 @@ const SuccessStories = () => {
       description: "Through early intervention and community support, a 19-year-old student was redirected from drug experimentation to becoming a peer educator in his college.",
       impact: "Now mentors 50+ students annually",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-        </svg>
+        <UserCheckIcon className="w-8 h-8" />
       )
     },
     {
@@ -94,9 +93,7 @@ const SuccessStories = () => {
       description: "A mother struggling with her teenager's addiction found hope through our parent support groups and family counseling programs.",
       impact: "Family reunited and thriving",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
-        </svg>
+        <HeartHandshakeIcon className="w-8 h-8" />
       )
     },
     {
@@ -104,9 +101,7 @@ const SuccessStories = () => {
       description: "A neighborhood with high drug activity saw a 70% reduction in incidents after implementing our community watch and awareness programs.",
       impact: "Safe environment restored",
       icon: (
-        <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 12V6H4v10h12z" clipRule="evenodd"/>
-        </svg>
+        <UsersIcon className="w-8 h-8" />
       )
     }
   ];

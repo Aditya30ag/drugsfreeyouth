@@ -1,5 +1,6 @@
 ﻿import React from "react";
 import Image from "next/image";
+import { Users, MessagesSquare, GraduationCap, Handshake } from "lucide-react";
 
 interface CampaignCardProps {
   title: string;
@@ -39,9 +40,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
-        </svg>
+        <Users className="w-12 h-12 text-primary" />
       ),
     },
     {
@@ -50,9 +49,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-2.257.743A6 6 0 113 8a6.1 6.1 0 01.736-2.93l.814 2.03A4 4 0 109.8 11.8l1.4-2.8a4 4 0 00-4.8-6.4z" clipRule="evenodd"/>
-        </svg>
+        <MessagesSquare className="w-12 h-12 text-primary" />
       ),
     },
     {
@@ -61,9 +58,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
-        </svg>
+        <GraduationCap className="w-12 h-12 text-primary" />
       ),
     },
     {
@@ -72,9 +67,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 20 20">
-          <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd"/>
-        </svg>
+        <Handshake className="w-12 h-12 text-primary" />
       ),
     },
   ];
