@@ -1,6 +1,21 @@
-﻿import React from 'react';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const PartnersEndorsements = () => {
+  const supportedCompanies = [
+    { name: "Hirecentive", src: "/Hirecentive.webp", href: "https://hirecentive.com/" },
+    { name: "Dream Ideal", src: "/Dream Ideal.webp" },
+    { name: "Janpriya", src: "/Janpriya.webp", href: "https://janapriyahospitals.com" }
+  ];
+
+  const institutionLogos = [
+    { name: "St. Aloysius", src: "/aloysius.webp", href: "https://staloysius.edu.in/" },
+    { name: "Barakah", src: "/barakh.webp", href: "https://bismangalore.com" },
+    { name: "Yenepoya", src: "/Yenepoya.webp", href: "https://www.yenepoya.edu.in/" },
+    { name: "Manipal", src: "/manipal.webp", href: "https://manipal.edu/" }
+  ];
+
   const partners = [
     {
       category: "Law Enforcement",
@@ -90,16 +105,74 @@ const PartnersEndorsements = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
             Our Partners & Endorsements
           </h2>
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed mb-8">
-            Supported by the Mangaluru City Police and trusted by leading community organizations. Together, we&apos;re building a network of change.
-          </p>
-          <div className="bg-muted rounded-2xl p-6 max-w-4xl mx-auto">
-            <p className="text-lg font-semibold text-foreground">
-              &ldquo;A collaborative effort between law enforcement, educational institutions, healthcare providers, and community organizations to create a drug-free society.&rdquo;
-            </p>
+          <div className="mt-10 space-y-12">
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
+                Supported by
+              </h3>
+              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                {supportedCompanies.map((company) => (
+                  company.href ? (
+                    <Link
+                      key={company.name}
+                      href={company.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="w-36 h-24 sm:w-40 sm:h-28 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
+                    >
+                      <Image
+                        src={company.src}
+                        alt={`${company.name} logo`}
+                        width={180}
+                        height={120}
+                        className="max-h-[72px] w-auto object-contain"
+                      />
+                    </Link>
+                  ) : (
+                    <div
+                      key={company.name}
+                      className="w-36 h-24 sm:w-40 sm:h-28 bg-card rounded-2xl shadow-sm flex items-center justify-center"
+                    >
+                      <Image
+                        src={company.src}
+                        alt={`${company.name} logo`}
+                        width={180}
+                        height={120}
+                        className="max-h-[72px] w-auto object-contain"
+                      />
+                    </div>
+                  )
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
+                Institution Logos
+              </h3>
+              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                {institutionLogos.map((institution) => (
+                  <Link
+                    key={institution.name}
+                    href={institution.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-36 h-24 sm:w-40 sm:h-28 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
+                  >
+                    <Image
+                      src={institution.src}
+                      alt={`${institution.name} logo`}
+                      width={180}
+                      height={120}
+                      className="max-h-[72px] w-auto object-contain"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
 

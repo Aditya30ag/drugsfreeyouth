@@ -4,8 +4,17 @@ import QRCodeGenerator from './QRCodeGenerator';
 
 const QRCodeSection = () => {
   return (
-    <section className="bg-background py-8 sm:py-12">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section
+      className="relative py-8 sm:py-12 overflow-hidden"
+      style={{
+        backgroundImage: "url('/background.webp')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <div className="absolute inset-0 bg-background/60" />
+      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif text-foreground mb-6 sm:mb-8">
           QR Code To Report Drug Peddling
         </h2>

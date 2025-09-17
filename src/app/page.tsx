@@ -11,10 +11,12 @@ import StatsSection from '../components/StatsSection';
 import ResourcesEducation from '../components/ResourcesEducation';
 import PartnersEndorsements from '../components/PartnersEndorsements';
 import EnhancedFooter from '../components/EnhancedFooter';
+import ScrollCounsellorPrompt from '../components/ScrollCounsellorPrompt';
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <ScrollCounsellorPrompt />
       {/* 1. Header Navigation */}
       <Header />
       
