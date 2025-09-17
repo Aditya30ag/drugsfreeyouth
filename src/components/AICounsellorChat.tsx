@@ -363,8 +363,8 @@ export function AICounsellorChat() {
       isOpen={isOpen}
       onOpenChange={setIsOpen}
     >
-      <ExpandableChatHeader className="relative flex-col items-start gap-3 overflow-hidden border-b bg-gradient-to-r from-primary to-primary/80 p-5 text-left text-primary-foreground">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.35),transparent_65%)]" />
+      <ExpandableChatHeader className="relative flex-col items-start gap-3 overflow-hidden border-b bg-gradient-to-r from-primary to-primary/90 p-5 text-left text-primary-foreground">
+        <div className="pointer-events-none absolute inset-0 " />
         <div className="relative flex w-full items-center justify-between gap-2">
           <div className="flex items-center gap-2 text-sm font-medium">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground/15">
@@ -392,9 +392,9 @@ export function AICounsellorChat() {
         </div>
       </ExpandableChatHeader>
 
-      <ExpandableChatBody className="relative bg-muted/20">
+      <ExpandableChatBody className="relative bg-muted/20 flex flex-col flex-1 min-h-0 overflow-hidden">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(30,58,138,0.08),transparent_60%)]" />
-        <ChatMessageList className="relative max-h-[60vh] overflow-y-auto pr-1 sm:max-h-[65vh] sm:pr-2 [scrollbar-color:rgba(30,58,138,0.35)_transparent]">
+        <ChatMessageList className="relative flex-1 min-h-0 overflow-y-auto pr-1 sm:pr-2 [scrollbar-color:rgba(30,58,138,0.35)_transparent]">
           {messages.map((message) => (
             <ChatBubble
               key={message.id}
@@ -409,7 +409,7 @@ export function AICounsellorChat() {
               <ChatBubbleMessage
                 variant={message.role === "user" ? "sent" : "received"}
                 className={cn(
-                  "w-full",
+                  "w-full break-words min-w-0",
                   message.role === "user"
                     ? "shadow-lg"
                     : "bg-background text-foreground shadow-sm",
@@ -438,9 +438,7 @@ export function AICounsellorChat() {
 
       <ExpandableChatFooter className="space-y-3 bg-gradient-to-b from-background/95 via-background/90 to-background/80 p-4 pb-5">
         <div className="flex flex-wrap items-center gap-2">
-          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-            Try asking
-          </span>
+          
           {quickPrompts.map((prompt) => (
             <button
               key={prompt}
@@ -455,30 +453,35 @@ export function AICounsellorChat() {
               {prompt}
             </button>
           ))}
+          <span className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+            Try asking
+          </span>
         </div>
         <form
           onSubmit={handleSubmit}
           className="relative rounded-2xl border border-border/80 bg-background/90 shadow-sm focus-within:border-primary focus-within:ring-1 focus-within:ring-primary/40"
         >
-          <ChatInput
-            ref={chatInputRef}
-            value={input}
-            onChange={(event) => setInput(event.target.value)}
-            placeholder="Ask the AI counsellor..."
-            className="min-h-12 h-auto resize-none rounded-2xl border-0 bg-transparent p-4 text-sm text-foreground focus-visible:ring-0"
-            disabled={isLoading}
-          />
-          <div className="flex items-center justify-between gap-2 border-t border-dashed border-border/80 px-4 py-2.5">
-            <span className="text-xs text-muted-foreground">We respond with practical next steps.</span>
+          <div className="relative">
+            <ChatInput
+              ref={chatInputRef}
+              value={input}
+              onChange={(event) => setInput(event.target.value)}
+              placeholder="Ask the AI counsellor..."
+              className="min-h-12 max-h-32 h-auto resize-none rounded-2xl border-0 bg-transparent p-4 pr-12 text-sm text-foreground focus-visible:ring-0"
+              disabled={isLoading}
+            />
             <Button
               type="submit"
-              size="sm"
-              className="gap-1.5 bg-primary text-primary-foreground hover:bg-primary/90"
+              size="icon"
+              className="absolute right-2 bottom-2 h-9 w-9 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-60"
               disabled={isLoading}
+              aria-label="Send message"
             >
-              Send
-              <Send className="h-3.5 w-3.5" aria-hidden />
+              <Send className="h-4 w-4" aria-hidden />
             </Button>
+          </div>
+          <div className="flex items-center justify-between gap-2 border-t border-dashed border-border/80 px-4 py-2.5">
+            <span className="text-xs text-muted-foreground">We respond with practical next steps.</span>
           </div>
         </form>
         {error && (

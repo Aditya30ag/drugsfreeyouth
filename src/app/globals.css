@@ -54,7 +54,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffffff;       /* scrollbar handle in white */
+  background: linear-gradient(180deg, rgba(30,58,138,0.95), rgba(30,58,138,0.75));;       /* scrollbar handle in white */
   border-radius: 8px;        /* rounded edges */
   border: 2px solid #ccc;    /* optional: outline so it’s visible */
 }
