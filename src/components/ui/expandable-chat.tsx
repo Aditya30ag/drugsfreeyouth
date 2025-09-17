@@ -1,12 +1,9 @@
 "use client";
 
-import React, { useEffect, useId, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { X, MessageCircle } from "lucide-react";
-
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-
-const mobileBreakpoint = 640;
 
 export type ChatPosition = "bottom-right" | "bottom-left";
 export type ChatSize = "sm" | "md" | "lg" | "xl" | "full";
@@ -30,7 +27,7 @@ const chatConfig = {
   states: {
     open: "pointer-events-auto opacity-100 visible scale-100 translate-y-0",
     closed:
-      "pointer-events-none opacity-0 invisible translate-y-full sm:translate-y-5 sm:scale-95",
+      "pointer-events-none opacity-0 invisible scale-100 sm:translate-y-5",
   },
 };
 
@@ -38,6 +35,8 @@ interface ExpandableChatProps extends React.HTMLAttributes<HTMLDivElement> {
   position?: ChatPosition;
   size?: ChatSize;
   icon?: React.ReactNode;
+  isOpen?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
 const ExpandableChat: React.FC<ExpandableChatProps> = ({
@@ -45,135 +44,54 @@ const ExpandableChat: React.FC<ExpandableChatProps> = ({
   position = "bottom-right",
   size = "md",
   icon,
+  isOpen,
+  onOpenChange,
   children,
   ...props
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [internalOpen, setInternalOpen] = useState(false);
   const chatRef = useRef<HTMLDivElement>(null);
-  const originalOverflowRef = useRef<string | null>(null);
-  const [isMobile, setIsMobile] = useState(false);
-  const panelId = useId();
 
-  const openChat = () => setIsOpen(true);
-  const closeChat = () => setIsOpen(false);
-  const toggleChat = () => setIsOpen((prev) => !prev);
-
-  useEffect(() => {
-    const handleOpen = () => openChat();
-    const handleClose = () => closeChat();
-
-    window.addEventListener("dfy-open-chat", handleOpen);
-    window.addEventListener("dfy-close-chat", handleClose);
-
-    return () => {
-      window.removeEventListener("dfy-open-chat", handleOpen);
-      window.removeEventListener("dfy-close-chat", handleClose);
-    };
-  }, []);
-
-  useEffect(() => {
-    const eventName = isOpen ? "dfy-chat-opened" : "dfy-chat-closed";
-    window.dispatchEvent(new Event(eventName));
-  }, [isOpen]);
-
-  useEffect(() => {
-    if (typeof window === "undefined") {
-      return;
+  const open = isOpen ?? internalOpen;
+  const toggleChat = () => {
+    const nextOpen = !open;
+    if (isOpen === undefined) {
+      setInternalOpen(nextOpen);
     }
-
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < mobileBreakpoint);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (typeof document === "undefined") {
-      return;
-    }
-
-    const body = document.body;
-
-    if (isOpen && isMobile) {
-      if (originalOverflowRef.current === null) {
-        originalOverflowRef.current = body.style.overflow;
-      }
-      body.style.overflow = "hidden";
-    } else if (!isOpen && originalOverflowRef.current !== null) {
-      body.style.overflow = originalOverflowRef.current;
-      originalOverflowRef.current = null;
-    }
-
-    return () => {
-      if (originalOverflowRef.current !== null) {
-        body.style.overflow = originalOverflowRef.current;
-        originalOverflowRef.current = null;
-      }
-    };
-  }, [isOpen, isMobile]);
+    onOpenChange?.(nextOpen);
+  };
 
   return (
-    <>
+    <div
+      className={cn(`fixed ${chatConfig.positions[position]} z-50`, className)}
+      {...props}
+    >
       <div
+        ref={chatRef}
         className={cn(
-          "fixed inset-0 z-[70] bg-background/90 backdrop-blur-sm transition-opacity duration-300 sm:hidden",
-          isOpen ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0",
+          "flex flex-col bg-background border sm:rounded-lg shadow-md overflow-hidden transition-all duration-250 ease-out sm:absolute sm:w-[90vw] sm:h-[80vh] fixed inset-0 w-full h-full sm:inset-auto",
+          chatConfig.chatPositions[position],
+          chatConfig.dimensions[size],
+          open ? chatConfig.states.open : chatConfig.states.closed,
+          className,
         )}
-        onClick={closeChat}
-        aria-hidden
-      />
-      <div
-        className={cn(`fixed ${chatConfig.positions[position]} z-[90]`, className)}
-        {...props}
       >
-        <div
-          ref={chatRef}
-          id={panelId}
-          role="dialog"
-          aria-modal="true"
-          aria-hidden={!isOpen}
-          className={cn(
-            "flex flex-col bg-background border shadow-xl overflow-hidden transition-transform duration-300 ease-out sm:absolute sm:w-[90vw] sm:h-[80vh]",
-            isMobile
-              ? "fixed inset-x-0 bottom-0 top-[max(1.5rem,env(safe-area-inset-top))] w-full rounded-t-3xl"
-              : "sm:rounded-lg",
-            chatConfig.chatPositions[position],
-            chatConfig.dimensions[size],
-            isOpen ? chatConfig.states.open : chatConfig.states.closed,
-            className,
-          )}
+        {children}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="absolute top-2 right-2 sm:hidden"
+          onClick={toggleChat}
         >
-          {children}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute top-2 right-2 sm:hidden"
-            onClick={closeChat}
-            type="button"
-            aria-label="Close chat"
-          >
-            <X className="h-4 w-4" />
-          </Button>
-        </div>
-        <ExpandableChatToggle
-          icon={icon}
-          isOpen={isOpen}
-          toggleChat={toggleChat}
-          aria-controls={panelId}
-          aria-expanded={isOpen}
-          aria-haspopup="dialog"
-          className={cn(
-            "sm:shadow-lg",
-            isMobile && isOpen ? "opacity-0 pointer-events-none" : "",
-          )}
-        />
+          <X className="h-4 w-4" />
+        </Button>
       </div>
-    </>
+      <ExpandableChatToggle
+        icon={icon}
+        isOpen={open}
+        toggleChat={toggleChat}
+      />
+    </div>
   );
 };
 
@@ -218,33 +136,23 @@ const ExpandableChatToggle: React.FC<ExpandableChatToggleProps> = ({
   isOpen,
   toggleChat,
   ...props
-}) => {
-  const { ["aria-label"]: ariaLabelProp, title, ...rest } = props;
-  const computedLabel = ariaLabelProp ?? (isOpen ? "Close chat" : "Open chat");
-  const computedTitle = title ?? (isOpen ? "Close chat" : "Open chat");
-
-  return (
-    <Button
-      variant="default"
-      onClick={toggleChat}
-      type="button"
-      className={cn(
-        "w-14 h-14 rounded-full shadow-md flex items-center justify-center hover:shadow-lg hover:shadow-black/30 transition-all duration-300",
-        className,
-        isOpen ? "bg-primary text-primary-foreground" : "",
-      )}
-      aria-label={computedLabel}
-      title={computedTitle}
-      {...rest}
-    >
-      {isOpen ? (
-        <X className="h-6 w-6" />
-      ) : (
-        icon || <MessageCircle className="h-6 w-6" />
-      )}
-    </Button>
-  );
-};
+}) => (
+  <Button
+    variant="default"
+    onClick={toggleChat}
+    className={cn(
+      "w-14 h-14 rounded-full shadow-md flex items-center justify-center hover:shadow-lg hover:shadow-black/30 transition-all duration-300",
+      className,
+    )}
+    {...props}
+  >
+    {isOpen ? (
+      <X className="h-6 w-6" />
+    ) : (
+      icon || <MessageCircle className="h-6 w-6" />
+    )}
+  </Button>
+);
 
 ExpandableChatToggle.displayName = "ExpandableChatToggle";
 

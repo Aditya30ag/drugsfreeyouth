@@ -9,7 +9,45 @@ const HeroBanner = () => {
             {/* Logo Section at Top */}
             <div className="relative z-20 py-8 md:py-12">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-center gap-12 md:gap-20 lg:gap-32">
+                    <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
+                        {/* District Admin Logo */}
+                        <Link
+                            href="https://dk.nic.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the District Administration website"
+                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                        >
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+                                <Image
+                                    src="/District_Admin.png"
+                                    alt="District Administration Logo"
+                                    width={160}
+                                    height={160}
+                                    className="w-full h-full object-contain rounded-lg"
+                                />
+                            </div>
+                        </Link>
+
+                        {/* District Police Logo */}
+                        <Link
+                            href="https://karnataka.gov.in/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the Karnataka State Police website"
+                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                        >
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+                                <Image
+                                    src="/District_Police.jpg"
+                                    alt="District Police Logo"
+                                    width={160}
+                                    height={160}
+                                    className="w-full h-full object-contain rounded-lg"
+                                />
+                            </div>
+                        </Link>
+
                         {/* Drugs Free Youth Logo */}
                         <Link
                             href="https://drugsfreeyouth.org"
@@ -18,12 +56,12 @@ const HeroBanner = () => {
                             aria-label="Visit the Drugs Free Youth website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative">
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
                                 <Image
                                     src="/1.jpg"
                                     alt="Drugs Free Youth Logo"
-                                    width={192}
-                                    height={192}
+                                    width={160}
+                                    height={160}
                                     className="w-full h-full object-contain rounded-lg"
                                 />
                             </div>
@@ -37,12 +75,12 @@ const HeroBanner = () => {
                             aria-label="Visit the MakeAChange Foundation website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative">
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
                                 <Image
                                     src="/2.jpg"
                                     alt="MakeAChange Foundation Logo"
-                                    width={192}
-                                    height={192}
+                                    width={160}
+                                    height={160}
                                     className="w-full h-full object-contain rounded-lg"
                                 />
                             </div>
@@ -50,18 +88,18 @@ const HeroBanner = () => {
 
                         {/* Mangaluru City Police Logo */}
                         <Link
-                            href="https://mangalurupolice.karnataka.gov.in"
+                            href="https://mangalorecitypolice.karnataka.gov.in/en"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Visit the Mangaluru City Police website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative">
+                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
                                 <Image
                                     src="/3.jpg"
                                     alt="Mangaluru City Police Logo"
-                                    width={192}
-                                    height={192}
+                                    width={160}
+                                    height={160}
                                     className="w-full h-full object-contain rounded-lg"
                                 />
                             </div>

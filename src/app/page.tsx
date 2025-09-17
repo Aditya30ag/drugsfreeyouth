@@ -35,24 +35,24 @@ export default function Home() {
       {/* 7. Campaign Pillars - Our 4 Pillars of Action (Enhanced) */}
       <CampaignPillars />
       
-      {/* 8. Success Stories & Testimonials (NEW) */}
-      <SuccessStories />
-      
-      {/* 9. Founder Message */}
-      <FounderMessage />
-
-      {/* 10. Initiative Drivers */}
+      {/* 8. Initiative Drivers */}
       <InitiativeDrivers />
 
-      {/* 11. Stats Section - Achievements */}
+      {/* 9. Partners & Endorsements - Credibility & Trust (NEW) */}
+      <PartnersEndorsements />
+      
+      {/* 10. Success Stories & Testimonials (NEW) */}
+      <SuccessStories />
+      
+      {/* 11. Founder Message */}
+      <FounderMessage />
+
+      {/* 12. Stats Section - Achievements */}
       <StatsSection />
 
 
-      {/* 12. Resources & Education - Guides + Myths vs Facts + Helplines (NEW) */}
+      {/* 13. Resources & Education - Guides + Myths vs Facts + Helplines (NEW) */}
       <ResourcesEducation />
-      
-      {/* 13. Partners & Endorsements - Credibility & Trust (NEW) */}
-      <PartnersEndorsements />
       
       {/* 14. Enhanced Footer with Multiple CTAs */}
       <EnhancedFooter />
