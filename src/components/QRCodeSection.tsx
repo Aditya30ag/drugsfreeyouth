@@ -55,10 +55,6 @@ const QRCodeSection = () => {
 
         {/* Additional Information */}
         <div className="max-w-2xl mx-auto mt-8 sm:mt-10">
-          <p className="text-sm sm:text-base text-foreground mb-6 sm:mb-8 px-4">
-            Mangaluru and Udupi Police launch initiative to curb the narcotics network.
-            Click the link or scan the QR code to report.
-          </p>
           <div className="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-6 lg:space-x-8 text-xs sm:text-sm text-muted-foreground mb-8 sm:mb-10">
             <div className="flex items-center">
               <svg className="w-3 h-3 sm:w-4 sm:h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">

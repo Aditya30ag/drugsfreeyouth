@@ -2,11 +2,14 @@
 import HeroBanner from '../components/HeroBanner';
 import QRCodeSection from '../components/QRCodeSection';
 import ImpactSnapshot from '../components/ImpactSnapshot';
+import AboutSection from '../components/AboutSection';
 import CampaignPillars from '../components/CampaignPillars';
 import SuccessStories from '../components/SuccessStories';
+import FounderMessage from '../components/FounderMessage';
+import InitiativeDrivers from '../components/InitiativeDrivers';
+import StatsSection from '../components/StatsSection';
 import ResourcesEducation from '../components/ResourcesEducation';
 import PartnersEndorsements from '../components/PartnersEndorsements';
-import StatsSection from '../components/StatsSection';
 import EnhancedFooter from '../components/EnhancedFooter';
 
 export default function Home() {
@@ -24,23 +27,32 @@ export default function Home() {
       {/* 5. Impact Snapshot - Why This Matters (NEW) */}
       <ImpactSnapshot />
       
-      {/* 6. Campaign Pillars - Our 4 Pillars of Action (Enhanced) */}
-      <CampaignPillars />
+      {/* 6. About Section - Mission Overview */}
+      <AboutSection />
       
-      {/* 7. Stats Section - Achievements */}
-      <StatsSection />
+      {/* 7. Campaign Pillars - Our 4 Pillars of Action (Enhanced) */}
+      <CampaignPillars />
       
       {/* 8. Success Stories & Testimonials (NEW) */}
       <SuccessStories />
       
-      
-      {/* 10. Resources & Education - Guides + Myths vs Facts + Helplines (NEW) */}
+      {/* 9. Founder Message */}
+      <FounderMessage />
+
+      {/* 10. Initiative Drivers */}
+      <InitiativeDrivers />
+
+      {/* 11. Stats Section - Achievements */}
+      <StatsSection />
+
+
+      {/* 12. Resources & Education - Guides + Myths vs Facts + Helplines (NEW) */}
       <ResourcesEducation />
       
-      {/* 11. Partners & Endorsements - Credibility & Trust (NEW) */}
+      {/* 13. Partners & Endorsements - Credibility & Trust (NEW) */}
       <PartnersEndorsements />
       
-      {/* 12. Enhanced Footer with Multiple CTAs */}
+      {/* 14. Enhanced Footer with Multiple CTAs */}
       <EnhancedFooter />
     </div>
   );

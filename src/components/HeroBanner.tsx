@@ -11,7 +11,13 @@ const HeroBanner = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-center gap-12 md:gap-20 lg:gap-32">
                         {/* Drugs Free Youth Logo */}
-                        <div className="flex flex-col items-center">
+                        <Link
+                            href="https://drugsfreeyouth.org"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the Drugs Free Youth website"
+                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                        >
                             <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative">
                                 <Image
                                     src="/1.jpg"
@@ -21,10 +27,16 @@ const HeroBanner = () => {
                                     className="w-full h-full object-contain rounded-lg"
                                 />
                             </div>
-                        </div>
+                        </Link>
 
                         {/* MakeAChange Foundation Logo */}
-                        <div className="flex flex-col items-center">
+                        <Link
+                            href="https://makeachangefoundation.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the MakeAChange Foundation website"
+                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                        >
                             <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative">
                                 <Image
                                     src="/2.jpg"
@@ -34,10 +46,16 @@ const HeroBanner = () => {
                                     className="w-full h-full object-contain rounded-lg"
                                 />
                             </div>
-                        </div>
+                        </Link>
 
                         {/* Mangaluru City Police Logo */}
-                        <div className="flex flex-col items-center">
+                        <Link
+                            href="https://mangalurupolice.karnataka.gov.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the Mangaluru City Police website"
+                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                        >
                             <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 relative">
                                 <Image
                                     src="/3.jpg"
@@ -47,7 +65,7 @@ const HeroBanner = () => {
                                     className="w-full h-full object-contain rounded-lg"
                                 />
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -80,7 +98,7 @@ const HeroBanner = () => {
                             <div className="lg:w-1/2 text-center lg:text-right">
                                 <h2 className="tagline text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
                                     <span className="text-primary">Be Brave.</span><br />
-                                    <span className="text-primary">Report Peddlers.</span>
+                                    <span className="text-primary">Report Drug Sellers.</span>
                                 </h2>
                                 <Link
                                     href="/contact#report"
