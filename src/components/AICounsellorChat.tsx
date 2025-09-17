@@ -214,7 +214,6 @@ interface Message {
 }
 
 export function AICounsellorChat() {
-  const STORAGE_KEY = "dfy.aiChat.messages.v1";
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
     {
@@ -229,7 +228,6 @@ export function AICounsellorChat() {
   const [error, setError] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatInputRef = useRef<HTMLTextAreaElement>(null);
-  const hasHydratedRef = useRef(false);
   const quickPrompts = useMemo(
     () => [
       "How do I report a suspicious drug activity anonymously?",
@@ -268,34 +266,6 @@ export function AICounsellorChat() {
       window.removeEventListener("dfy-open-chat", handleOpenChat);
     };
   }, []);
-
-  // Load messages from localStorage on mount
-  useEffect(() => {
-    try {
-      const raw = typeof window !== "undefined" ? localStorage.getItem(STORAGE_KEY) : null;
-      if (raw) {
-        const parsed = JSON.parse(raw) as Message[];
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          setMessages(parsed);
-        }
-      }
-    } catch {
-      // ignore malformed storage
-    } finally {
-      hasHydratedRef.current = true;
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // Persist messages to localStorage whenever they change (after hydration)
-  useEffect(() => {
-    if (!hasHydratedRef.current) return;
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
-    } catch {
-      // storage may be unavailable (e.g., in private mode)
-    }
-  }, [messages, STORAGE_KEY]);
 
   useEffect(() => {
     if (isOpen) {
