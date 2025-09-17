@@ -12,8 +12,8 @@ export function ChatBubble({ variant = "received", className, children, ...props
   return (
     <div
       className={cn(
-        "flex w-full items-start gap-3",
-        isSent ? "justify-end" : "justify-start",
+        "flex w-full items-end gap-3",
+        isSent ? "justify-end flex-row-reverse" : "justify-start",
         className,
       )}
       {...props}
@@ -60,8 +60,10 @@ export function ChatBubbleMessage({
   return (
     <div
       className={cn(
-        "max-w-[80%] rounded-2xl px-3 py-2 text-sm",
-        isSent ? "bg-primary text-primary-foreground" : "bg-muted text-foreground",
+        "max-w-[90%] sm:max-w-[80%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-sm",
+        isSent
+          ? "bg-primary text-primary-foreground"
+          : "bg-card text-foreground border border-border/80",
         className,
       )}
       {...props}
@@ -78,4 +80,3 @@ export function ChatBubbleMessage({
     </div>
   );
 }
-

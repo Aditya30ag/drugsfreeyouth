@@ -121,27 +121,27 @@ const PartnersEndorsements = () => {
                       href={company.href}
                       target="_blank"
                       rel="noreferrer"
-                      className="w-36 h-24 sm:w-40 sm:h-28 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
+                      className="w-48 h-32 sm:w-56 sm:h-36 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
                     >
                       <Image
                         src={company.src}
                         alt={`${company.name} logo`}
-                        width={180}
-                        height={120}
-                        className="max-h-[72px] w-auto object-contain"
+                        width={240}
+                        height={160}
+                        className="max-h-[96px] w-auto object-contain"
                       />
                     </Link>
                   ) : (
                     <div
                       key={company.name}
-                      className="w-36 h-24 sm:w-40 sm:h-28 bg-card rounded-2xl shadow-sm flex items-center justify-center"
+                      className="w-48 h-32 sm:w-56 sm:h-36 bg-card rounded-2xl shadow-sm flex items-center justify-center"
                     >
                       <Image
                         src={company.src}
                         alt={`${company.name} logo`}
-                        width={180}
-                        height={120}
-                        className="max-h-[72px] w-auto object-contain"
+                        width={240}
+                        height={160}
+                        className="max-h-[96px] w-auto object-contain"
                       />
                     </div>
                   )
@@ -160,7 +160,7 @@ const PartnersEndorsements = () => {
                     href={institution.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="w-36 h-24 sm:w-40 sm:h-28 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
+                    className="w-48 h-32 sm:w-56 sm:h-36 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
                   >
                     <Image
                       src={institution.src}

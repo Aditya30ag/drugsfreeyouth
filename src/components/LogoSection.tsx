@@ -38,7 +38,7 @@ const LogoSection = () => {
           >
             <div className="w-12 h-12 relative">
               <Image
-                src="/2.jpg"
+                src="./2.png"
                 alt="MakeAChange Foundation Logo"
                 width={48}
                 height={48}
@@ -56,7 +56,7 @@ const LogoSection = () => {
           >
             <div className="w-12 h-12 relative">
               <Image
-                src="/3.jpg"
+                src="/3.webp"
                 alt="Mangaluru City Police Logo"
                 width={48}
                 height={48}

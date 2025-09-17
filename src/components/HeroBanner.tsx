@@ -5,11 +5,11 @@ import { CrowdCanvas } from './CrowdCanvas';
 
 const HeroBanner = () => {
     return (
-           <section className="hero relative min-h-screen flex flex-col overflow-hidden mt-16 sm:mt-6">
+           <section className="hero relative min-h-screen flex flex-col overflow-hidden pt-16 sm:pt-12">
             {/* Logo Section at Top */}
-            <div className="relative z-20 py-8 md:py-12">
+            <div className="relative z-20 py-4 md:py-6">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex items-center justify-center gap-8 md:gap-12 lg:gap-16 flex-wrap">
+                    <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 md:gap-x-10 lg:gap-x-12">
                         {/* District Admin Logo */}
                         <Link
                             href="https://dk.nic.in"
@@ -18,10 +18,29 @@ const HeroBanner = () => {
                             aria-label="Visit the District Administration website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative">
                                 <Image
                                     src="/District_Admin.png"
                                     alt="District Administration Logo"
+                                    width={160}
+                                    height={160}
+                                    className="w-full h-full object-contain rounded-lg"
+                                />
+                            </div>
+                        </Link>
+
+                        {/* Mangaluru City Police Logo */}
+                        <Link
+                            href="https://mangalorecitypolice.karnataka.gov.in/en"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit the Mangaluru City Police website"
+                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
+                        >
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative">
+                                <Image
+                                    src="/3.webp"
+                                    alt="Mangaluru City Police Logo"
                                     width={160}
                                     height={160}
                                     className="w-full h-full object-contain rounded-lg"
@@ -37,7 +56,7 @@ const HeroBanner = () => {
                             aria-label="Visit the Karnataka State Police website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative">
                                 <Image
                                     src="/District_Police.jpg"
                                     alt="District Police Logo"
@@ -56,7 +75,7 @@ const HeroBanner = () => {
                             aria-label="Visit the Drugs Free Youth website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative">
                                 <Image
                                     src="/1.jpg"
                                     alt="Drugs Free Youth Logo"
@@ -75,29 +94,10 @@ const HeroBanner = () => {
                             aria-label="Visit the MakeAChange Foundation website"
                             className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
                         >
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
+                            <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 lg:w-32 lg:h-32 relative">
                                 <Image
-                                    src="/2.jpg"
+                                    src="/2.png"
                                     alt="MakeAChange Foundation Logo"
-                                    width={160}
-                                    height={160}
-                                    className="w-full h-full object-contain rounded-lg"
-                                />
-                            </div>
-                        </Link>
-
-                        {/* Mangaluru City Police Logo */}
-                        <Link
-                            href="https://mangalorecitypolice.karnataka.gov.in/en"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="Visit the Mangaluru City Police website"
-                            className="flex flex-col items-center transition-transform duration-200 hover:scale-105"
-                        >
-                            <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 relative">
-                                <Image
-                                    src="/3.jpg"
-                                    alt="Mangaluru City Police Logo"
                                     width={160}
                                     height={160}
                                     className="w-full h-full object-contain rounded-lg"
@@ -121,12 +121,12 @@ const HeroBanner = () => {
                 </div>
 
                 {/* Main Content Overlay - Positioned Above Animation */}
-                <div className="absolute top-8 left-0 right-0 z-20">
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="relative z-20">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-1 sm:pt-2">
                         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
                             {/* Left side - Stand Strong, Stay Awake, Save Youth */}
                             <div className="lg:w-1/2 text-center lg:text-left">
-                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+                                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
                                     <span className="text-primary">Stand Strong, Stay Awake,</span><br />
                                     <span className="text-primary">Save Youth</span>
                                 </h1>
@@ -134,7 +134,7 @@ const HeroBanner = () => {
                             
                             {/* Right side - Be Brave Report Peddlers */}
                             <div className="lg:w-1/2 text-center lg:text-right">
-                                <h2 className="tagline text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+                                <h2 className="tagline text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4 drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
                                     <span className="text-primary">Be Brave.</span><br />
                                     <span className="text-primary">Report Drug Sellers.</span>
                                 </h2>
