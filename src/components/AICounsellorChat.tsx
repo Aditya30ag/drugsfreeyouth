@@ -423,7 +423,7 @@ export function AICounsellorChat() {
           {isLoading && (
             <ChatBubble variant="received">
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <Bot className="h-5 w-5" />
+                <User className="h-5 w-5" />
               </div>
               <ChatBubbleMessage
                 className="bg-background text-foreground"
