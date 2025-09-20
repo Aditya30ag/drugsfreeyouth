@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 interface ResourceItemProps {
   title: string;
@@ -226,47 +226,47 @@ const ResourcesEducation = () => {
             Quick Access Links
           </h3>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border`}>
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border flex flex-col h-full`}>
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-foreground" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"/>
                 </svg>
               </div>
               <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Treatment Centers</h4>
-              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Find nearby rehabilitation facilities</p>
+              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed flex-grow">Find nearby rehabilitation facilities</p>
               <button className="text-primary font-semibold hover:underline text-xs sm:text-sm">Find Centers</button>
             </div>
 
-            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border`}>
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border flex flex-col h-full`}>
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-foreground" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                 </svg>
               </div>
-              <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Support Groups</h4>
-              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Connect with others in recovery</p>
-              <button className="text-primary font-semibold hover:underline text-xs sm:text-sm">Join Groups</button>
+              <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Counsellors</h4>
+              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed flex-grow">Connect with professional counsellors</p>
+              <button className="text-primary font-semibold hover:underline text-xs sm:text-sm">Find Counsellors</button>
             </div>
 
-            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border`}>
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border flex flex-col h-full`}>
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-foreground" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
+                  <path fillRule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zM8 6a2 2 0 114 0v1H8V6z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Events Calendar</h4>
-              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Upcoming awareness programs</p>
-              <button className="text-primary font-semibold hover:underline text-xs sm:text-sm">View Events</button>
+              <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Psychiatrists</h4>
+              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed flex-grow">Access psychiatric care and treatment</p>
+              <button className="text-primary font-semibold hover:underline text-xs sm:text-sm">Find Psychiatrists</button>
             </div>
 
-            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border`}>
+            <div className={`text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:shadow-lg bg-muted border border-border flex flex-col h-full`}>
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-muted rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
                 <svg className="w-6 h-6 sm:w-8 sm:h-8 text-foreground" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/>
                 </svg>
               </div>
               <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Report Activity</h4>
-              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">Anonymous drug activity reporting</p>
+              <p className="text-muted-foreground text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed flex-grow">Anonymous drug activity reporting</p>
               <button className="text-primary font-semibold hover:underline text-xs sm:text-sm">Report Now</button>
             </div>
           </div>
