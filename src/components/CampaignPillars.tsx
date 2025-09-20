@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Image from "next/image";
 import { Users, MessagesSquare, GraduationCap, Handshake } from "lucide-react";
 
@@ -40,7 +40,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <Users className="w-12 h-12 text-primary" />
+        <Users className="w-12 h-12 text-red-600" />
       ),
     },
     {
@@ -49,7 +49,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <MessagesSquare className="w-12 h-12 text-primary" />
+        <MessagesSquare className="w-12 h-12 text-red-600" />
       ),
     },
     {
@@ -58,7 +58,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <GraduationCap className="w-12 h-12 text-primary" />
+        <GraduationCap className="w-12 h-12 text-red-600" />
       ),
     },
     {
@@ -67,7 +67,7 @@ const CampaignPillars: React.FC = () => {
       bgColor: "bg-card",
       textColor: "text-foreground",
       icon: (
-        <Handshake className="w-12 h-12 text-primary" />
+        <Handshake className="w-12 h-12 text-red-600" />
       ),
     },
   ];

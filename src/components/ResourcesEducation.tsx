@@ -144,7 +144,7 @@ const ResourcesEducation = () => {
         {/* Downloadable Resources */}
         <div className="mb-20">
           <h3 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-12">
-            Free Educational Materials
+            Educational Materials
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {resources.map((resource, index) => (

@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { GraduationCap, Building2, Camera, Users } from 'lucide-react';
 
 const InstitutionalPartners = () => {
@@ -68,10 +68,10 @@ const InstitutionalPartners = () => {
                     <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                         <span className="text-muted-foreground font-medium">📩 Write to us at:</span>
                         <a 
-                            href="mailto:partnerships@drugsfreeyouth.org"
+                            href="mailto:support@makeachangefoundation.in"
                             className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-6 py-2 rounded-lg transition-colors duration-200"
                         >
-                            partnerships@drugsfreeyouth.org
+                            support@makeachangefoundation.in
                         </a>
                     </div>
                 </div>

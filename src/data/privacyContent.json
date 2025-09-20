@@ -1,0 +1,297 @@
+{
+  "sections": [
+    {
+      "id": "plain-summary",
+      "number": "",
+      "title": "Plain summary",
+      "summary": "",
+      "color": "blue",
+      "content": [
+        "This policy explains what personal data we collect, why we collect it, who we share it with, how long we keep it, and what rights you have. Our priority is to protect privacy while enabling safe, effective community reporting and support. If you do not agree with this policy, please do not use the site or services."
+      ]
+    },
+    {
+      "id": "scope",
+      "number": "1",
+      "title": "Scope and purpose",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "**What this covers:** This Privacy Policy applies to data collected through our website (drugsfreeyouth.org), forms and QR reporting, volunteer signups, story/photo submissions, donation flows (where enabled), helplines, events, and any offline activities run by Drugs Free Youth in connection with the campaign.",
+        "**Why we collect data:** To operate the anonymous reporting system, coordinate with partner law enforcement and service providers, onboard volunteers, run programs, publish helpful resources, and improve services. We collect only what is reasonably necessary for these purposes."
+      ]
+    },
+    {
+      "id": "definitions",
+      "number": "2",
+      "title": "Key definitions",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "**Personal data** - Any information that identifies you directly or indirectly (e.g., name, phone, email).",
+        "**Anonymous report** - A report submitted in \"anonymous mode\" where you choose not to provide contact details. When you select anonymous mode we do not require identifying fields. We also take technical measures to avoid storing identifiers linked to the anonymous report.",
+        "**Submissions** - Stories, photos, videos, or other content you upload.",
+        "**Partners** - Police departments, NGOs, schools, medical providers, and other organizations we work with."
+      ]
+    },
+    {
+      "id": "data-collection",
+      "number": "3",
+      "title": "What data we collect and how we collect it",
+      "summary": "",
+      "color": "amber",
+      "content": [
+        "**A. Data you provide voluntarily**",
+        "**Report content:** Location, description, optional photo/video, date/time of observation. These are the core fields for both anonymous and identified reports.",
+        "**Contact details:** Name, phone, email - only if you choose to provide them (for follow-up).",
+        "**Volunteer data:** Name, contact info, identification documents, background-check consent, references, emergency contact, relevant experience.",
+        "**Submissions:** Story text, photos, video, and any metadata you include. For photos of minors you must confirm you have parental/guardian consent when uploading.",
+        "**Donations:** Payment information processed by our payment partner (we do not store full payment card details on our servers). Billing name and email for receipts may be stored.",
+        "**Communications:** Messages you send to us via email, web forms, or helpline transcripts if recorded with consent.",
+        "**B. Data collected automatically**",
+        "**Technical data:** If you use identified reporting or other non-anonymous parts of the site we may collect device / connection metadata for security and support. For anonymous reports, our system is configured to minimize collection and avoid storing device identifiers or IP addresses with the report content. Where technical logging is necessary for security, we isolate and do not link logs to anonymous report content.",
+        "**Cookies and analytics:** We use cookies and analytics tools to improve the site. See Section 10 for details."
+      ]
+    },
+    {
+      "id": "data-use",
+      "number": "4",
+      "title": "How we use personal data - purposes and legal basis",
+      "summary": "",
+      "color": "green",
+      "content": [
+        "We use personal data for the following purposes:",
+        "**Operate the anonymous reporting system** - triage, forward reports to police partners or community response teams, and monitor hotspots for public safety.",
+        "**Basis:** Legitimate interest in protecting community safety and the performance of a public interest function in partnership with authorities.",
+        "**Follow-up communications** - if you provide contact info we may follow up for clarification, support, or to offer services.",
+        "**Basis:** Your consent or legitimate interest where follow-up is necessary for safety.",
+        "**Volunteer management** - screening, training, background checks, scheduling, and coordination.",
+        "**Basis:** Consent and legitimate interest to ensure safe volunteer involvement.",
+        "**Program administration** - scheduling events, publishing resources, maintaining impact records, and issuing receipts for donations.",
+        "**Basis:** Performance of contract (donation processing) and legitimate interest.",
+        "**Service improvement and research** - aggregated, anonymized analysis of reports and program outcomes to improve operations.",
+        "**Basis:** Legitimate interest in program effectiveness.",
+        "**Legal compliance and safety** - responding to lawful requests from police or courts and addressing emergencies.",
+        "**Basis:** Legal obligation and vital interest.",
+        "**Publication and fundraising** - with consent we may publish anonymized stories and aggregated outcomes; if you upload photos or stories you grant the license described in our Terms.",
+        "**Basis:** Your consent or an agreed license.",
+        "If you are a resident of a jurisdiction with specific data protection laws, the legal basis may include consent where required."
+      ]
+    },
+    {
+      "id": "data-sharing",
+      "number": "5",
+      "title": "Sharing personal data - who we share with",
+      "summary": "",
+      "color": "red",
+      "content": [
+        "We may share your information with:",
+        "**Police partners and law enforcement** — to enable investigation and action in response to reports. Report content and any media you supply may be forwarded to these partners.",
+        "**Medical and social service providers** — to refer individuals in need of care.",
+        "**Service providers** — payment processors, hosting providers, analytics vendors, communication platforms - only to the extent needed and under contract.",
+        "**Legal and regulatory authorities** — where required by law or court order.",
+        "**Research or evaluation partners** — in aggregated, anonymized form unless you consent to identifiable sharing.",
+        "**Professional advisors** — legal or accounting firms as necessary.",
+        "We require partners and service providers to implement appropriate security and confidentiality measures and to use data only for contracted purposes."
+      ]
+    },
+    {
+      "id": "anonymous-reporting",
+      "number": "6",
+      "title": "Anonymous reporting - special measures",
+      "summary": "We recognize that anonymity is central to safe reporting. Special protections apply when you choose anonymous mode.",
+      "color": "purple",
+      "content": [
+        "We recognize that anonymity is central to safe reporting. When you choose anonymous reporting:",
+        "• You are not required to provide name, phone, or email.",
+        "• Our forms do not prompt for identifying information when anonymous mode is selected.",
+        "• We implement technical and operational controls to avoid storing IP addresses, device identifiers, or other metadata with the anonymous report content. If logs are created for security, they are segregated and not linked to anonymous report content.",
+        "• We cannot always guarantee absolute anonymity - for example, if you include identifying photos or location details that could identify you, or if law requires disclosure under court order. We will notify you if we are compelled to disclose identifiable information where possible and permitted by law.",
+        "• If you want to be certain your report cannot be linked back to you, do not include contact details and avoid uploading media that contains identifying details."
+      ]
+    },
+    {
+      "id": "retention",
+      "number": "7",
+      "title": "Retention periods",
+      "summary": "",
+      "color": "indigo",
+      "content": [
+        "We retain personal data only as long as necessary for the purposes described, to comply with legal obligations, and to support program evaluation.",
+        "**Typical retention guidelines:**",
+        "**Anonymous report content:** Retained in active system for up to 3 years for operational use; anonymized aggregated records may be kept indefinitely for evaluation. In cases involving law enforcement investigations, retention may be longer as required.",
+        "**Identified reports / follow-up records:** Retained for up to 7 years or as required by partner agreements or law.",
+        "**Volunteer records:** Retained for the duration of engagement plus 5 years for reference and legal compliance.",
+        "**Submissions (stories, photos):** Retained until you request removal or for up to 7 years; published materials may be retained longer for archival purposes unless removal is requested and practicable.",
+        "**Donation records and receipts:** Retained for 7 years for accounting and legal compliance.",
+        "**Cookies and analytics data:** Retention varies by tool - see Section 10.",
+        "We will anonymize or delete data on request subject to legal or operational constraints - see Section 12 on your rights."
+      ]
+    },
+    {
+      "id": "security",
+      "number": "8",
+      "title": "Security measures",
+      "summary": "",
+      "color": "teal",
+      "content": [
+        "We protect personal data using a combination of technical, administrative, and physical safeguards:",
+        "• Access controls and role-based permissions for staff.",
+        "• Encryption at rest and in transit where appropriate.",
+        "• Regular security assessments, patch management, and backups.",
+        "• Contracts requiring service providers to maintain adequate protections.",
+        "• Operational procedures to minimize staff access to anonymous report identifiers.",
+        "While we aim to protect your data, no system is 100% secure. If a breach occurs that affects your data we will notify affected users and authorities in accordance with applicable law."
+      ]
+    },
+    {
+      "id": "minors",
+      "number": "9",
+      "title": "Children and minors",
+      "summary": "",
+      "color": "orange",
+      "content": [
+        "Our services are not intended for children under 16 to register as volunteers or upload identifying images without parental/guardian consent. If you are a parent or guardian and you upload materials featuring a minor, you assert that you have legal authority to provide consent. If we learn that we have collected personal data from a child without parental consent where required, we will delete it promptly.",
+        "If you believe we have collected personal data from a minor without appropriate consent, contact support@makeachangefoundation.in."
+      ]
+    },
+    {
+      "id": "cookies",
+      "number": "10",
+      "title": "Cookies, analytics and tracking",
+      "summary": "We use cookies and analytics to operate and improve the site. You can control cookie preferences via the cookie banner.",
+      "color": "cyan",
+      "content": [
+        "**Types of cookies we use:**",
+        "**Essential cookies** - required for site security and basic functionality (e.g., session management).",
+        "**Performance & analytics cookies** - help us understand site usage and improve content (may include Google Analytics or similar). Data is aggregated and used for program improvement.",
+        "**Functional cookies** - remember preferences (language, theme).",
+        "**Optional marketing cookies** - only used if you consent - for social media or campaign amplification.",
+        "**How to control cookies:** Your browser settings let you block or delete cookies. Blocking essential cookies may affect functionality. If you wish to opt out of analytics, use the cookie preference control in the site footer or contact support@makeachangefoundation.in."
+      ]
+    },
+    {
+      "id": "transfers",
+      "number": "11",
+      "title": "International transfers",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "Your data may be processed in India and in jurisdictions where our service providers are located. Where data is transferred internationally we take reasonable steps to ensure adequate protections such as contractual safeguards or recognized transfer mechanisms. Contact support@makeachangefoundation.in for details about specific transfers."
+      ]
+    },
+    {
+      "id": "rights",
+      "number": "12",
+      "title": "Your rights and choices",
+      "summary": "",
+      "color": "emerald",
+      "content": [
+        "Depending on your jurisdiction you may have the following rights - we describe how to exercise them and any relevant exceptions.",
+        "**Rights you may have**",
+        "**Access** - request a copy of personal data we hold about you.",
+        "**Correction** - request correction of inaccurate or incomplete data.",
+        "**Deletion** - request deletion of personal data (right to be forgotten) subject to legal/operational exceptions.",
+        "**Restriction** - request that processing be restricted while a dispute is resolved.",
+        "**Object** - object to certain processing, such as direct marketing.",
+        "**Portability** - request a machine-readable copy of data you provided.",
+        "**Withdraw consent** - if processing is based on consent you can withdraw it, without affecting prior lawful processing.",
+        "**How to exercise these rights**",
+        "Email support@makeachangefoundation.in with \"Data Request\" in the subject and include: your name, contact info, what you are requesting, and any supporting details. For deletion or access requests we may ask you to verify your identity to prevent unauthorized disclosures.",
+        "**Exceptions and important notes**",
+        "We may refuse or partially fulfill requests where permitted by law - for example where data is required for an ongoing police investigation, legal obligation, or where we must retain records for accounting. We will explain any denial.",
+        "If we do not respond satisfactorily, you may escalate to your local data protection authority or pursue legal remedies under applicable law."
+      ]
+    },
+    {
+      "id": "law-enforcement",
+      "number": "13",
+      "title": "Law enforcement, legal obligations and emergencies",
+      "summary": "",
+      "color": "rose",
+      "content": [
+        "We cooperate with law enforcement and comply with lawful orders and court processes. We may disclose personal data if required by law, to protect the safety of others, to prevent serious harm, or to establish or defend our legal rights.",
+        "If we are compelled to disclose data we will attempt to notify you unless prohibited."
+      ]
+    },
+    {
+      "id": "third-party",
+      "number": "14",
+      "title": "Third-party services and links",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "Our site may link to external sites and rely on third-party services (payment processors, hosting, analytics). Those services have their own privacy policies and practices which we do not control. We recommend you review their policies."
+      ]
+    },
+    {
+      "id": "breach-response",
+      "number": "15",
+      "title": "Data breach response",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "In the event of a data breach that affects personal data we will: contain and assess the incident, notify affected individuals and regulators as required by law, and take remedial steps. We will also document the incident and actions taken."
+      ]
+    },
+    {
+      "id": "policy-changes",
+      "number": "16",
+      "title": "Changes to this policy",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "We may update this Privacy Policy from time to time. Material changes will be posted on this page with an updated effective date and, where feasible, notified to registered users. Continued use of the site after the effective date indicates acceptance of the updated policy."
+      ]
+    },
+    {
+      "id": "contact",
+      "number": "17",
+      "title": "How to contact us",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "For privacy questions, access requests, or complaints contact:",
+        "**Privacy Officer**",
+        "**Drugs Free Youth**",
+        "**Email:** support@makeachangefoundation.in",
+        "**Mail:** [Legal Entity Name], [Address], Karnataka, India",
+        "**Phone:** +91 9901415505",
+        "We aim to acknowledge requests within 5 business days and resolve substantive requests within 30 days. Complex requests may require additional time."
+      ]
+    },
+    {
+      "id": "dispute-resolution",
+      "number": "18",
+      "title": "Dispute resolution and supervisory authority",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "If you are not satisfied with our response you may escalate the matter to the appropriate supervisory authority in your jurisdiction. For India-based users you may raise concerns with relevant authorities or seek legal remedies in the courts of Karnataka. If you are a resident of another country, you may contact your local data protection regulator."
+      ]
+    },
+    {
+      "id": "best-practices",
+      "number": "19",
+      "title": "Additional notes and best practices for users",
+      "summary": "",
+      "color": "blue",
+      "content": [
+        "• When submitting anonymous reports avoid adding personally identifying photos or details if you wish to remain anonymous.",
+        "• If a report concerns immediate risk, contact emergency services first.",
+        "• Keep copies of any consent forms or permissions for images of minors that you submit.",
+        "• For partner organizations seeking data access for evaluation, contact support@makeachangefoundation.in to discuss data-sharing agreements and safeguards."
+      ]
+    },
+    {
+      "id": "legal-disclaimer",
+      "number": "20",
+      "title": "Legal disclaimer",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "This Privacy Policy is intended to inform you of our practices but does not constitute legal advice. Please consult legal counsel for compliance with specific laws applicable to your context."
+      ]
+    }
+  ]
+}

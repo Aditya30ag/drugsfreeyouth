@@ -24,12 +24,21 @@ const QRCodeSection = () => {
           {/* Mangalore QR Code */}
           <div className="text-center">
             <h3 className="text-base sm:text-lg font-semibold text-foreground mb-3 sm:mb-4">Mangalore</h3>
+            <div>
+            <a 
+              href="https://tally.so/r/3jXOJx" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs sm:text-sm text-primary hover:underline mt-2 inline-block"
+            >
             <div className="w-32 h-32 sm:w-48 sm:h-48 bg-card rounded-lg shadow-lg flex items-center justify-center border-2 border-border p-2 sm:p-4">
               <QRCodeGenerator 
                 text="https://tally.so/r/3jXOJx" 
                 size={160}
                 className="w-full h-full"
               />
+            </div>
+            </a>
             </div>
             <a 
               href="https://tally.so/r/3jXOJx" 
@@ -44,12 +53,21 @@ const QRCodeSection = () => {
           {/* Udupi QR Code */}
           <div className="text-center ml-4">
             <h3 className="text-base sm:text-lg font-semibold text-foreground mb-3 sm:mb-4">Udupi</h3>
-            <div className="w-32 h-32 sm:w-48 sm:h-48 bg-card rounded-lg shadow-lg flex items-center justify-center border-2 border-border p-2 sm:p-4">
-              <QRCodeGenerator 
-                text="https://tally.so/r/nWVA5k" 
-                size={160}
-                className="w-full h-full"
-              />
+            <div>
+            <a 
+              href="https://tally.so/r/nWVA5k" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-xs sm:text-sm text-primary hover:underline mt-2 inline-block"
+            >
+              <div className="w-32 h-32 sm:w-48 sm:h-48 bg-card rounded-lg shadow-lg flex items-center justify-center border-2 border-border p-2 sm:p-4">
+                <QRCodeGenerator 
+                  text="https://tally.so/r/nWVA5k" 
+                  size={160}
+                  className="w-full h-full"
+                />
+              </div>
+            </a>
             </div>
             <a 
               href="https://tally.so/r/nWVA5k" 

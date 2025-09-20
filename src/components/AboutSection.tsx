@@ -70,7 +70,7 @@ const AboutSection = () => {
               key={pillar.title}
               className="bg-card rounded-2xl px-6 py-8 shadow-lg transition-shadow duration-300 hover:shadow-xl text-center"
             >
-              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+              <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-red-50 text-red-600">
                 {pillar.icon}
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">{pillar.title}</h3>

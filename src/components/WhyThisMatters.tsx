@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 
 const WhyThisMatters = () => {
   const stats = [
@@ -46,7 +46,7 @@ const WhyThisMatters = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="bg-card rounded-3xl p-8 text-center transform hover:scale-105 transition-transform duration-300">
-              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary-foreground">
+              <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 text-primary-foreground">
                 {stat.icon}
               </div>
               <div className="text-3xl sm:text-4xl font-bold text-primary mb-4">

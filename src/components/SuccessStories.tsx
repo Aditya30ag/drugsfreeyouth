@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { HeartHandshakeIcon, UsersIcon, UserCheckIcon } from 'lucide-react';
 
@@ -85,7 +85,7 @@ const SuccessStories = () => {
       description: "Through early intervention and community support, a 19-year-old student was redirected from drug experimentation to becoming a peer educator in his college.",
       impact: "Now mentors 50+ students annually",
       icon: (
-        <UserCheckIcon className="w-8 h-8" />
+        <UserCheckIcon className="w-8 h-8 text-red-600" />
       )
     },
     {
@@ -93,7 +93,7 @@ const SuccessStories = () => {
       description: "A mother struggling with her teenager's addiction found hope through our parent support groups and family counseling programs.",
       impact: "Family reunited and thriving",
       icon: (
-        <HeartHandshakeIcon className="w-8 h-8" />
+        <HeartHandshakeIcon className="w-8 h-8 text-red-600" />
       )
     },
     {
@@ -101,13 +101,13 @@ const SuccessStories = () => {
       description: "A neighborhood with high drug activity saw a 70% reduction in incidents after implementing our community watch and awareness programs.",
       impact: "Safe environment restored",
       icon: (
-        <UsersIcon className="w-8 h-8" />
+        <UsersIcon className="w-8 h-8 text-red-600" />
       )
     }
   ];
 
   return (
-    <section className="bg-background py-12 sm:py-20 px-4 sm:px-6">
+    <section className="bg-background px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 sm:mb-16">

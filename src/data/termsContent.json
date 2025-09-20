@@ -1,0 +1,280 @@
+{
+  "sections": [
+    {
+      "id": "plain-language",
+      "number": "1",
+      "title": "Plain-language summary (quick key points)",
+      "summary": "",
+      "color": "muted",
+      "content": [
+        "• Use the site for information, anonymous reporting, volunteer signup, and to access resources.",
+        "• Anonymous reports are accepted but may be shared with police partners for action. Anonymous means we collect only what you enter - not your identity - when you choose anonymous mode.",
+        "• If you upload stories or photos, you must have permission for anyone shown. We may anonymize or decline to publish without consent.",
+        "• Volunteers must complete training and may be subject to background checks.",
+        "• Donations (if accepted) will be processed by our payment partner - receipts provided where applicable. Donations may not be tax-deductible unless explicitly stated.",
+        "• We try to keep content accurate but we do not guarantee it - use professional medical, legal, or emergency services when needed.",
+        "• By using the site you accept these Terms. If you disagree, please do not use the site."
+      ]
+    },
+    {
+      "id": "definitions",
+      "number": "2",
+      "title": "Definitions",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "In these Terms:",
+        "**\"We\", \"us\", \"our\"** refers to Drugs Free Youth and the legal entity that operates this site.",
+        "**\"You\" or \"User\"** means any visitor to the site, including parents, students, volunteers, partners, donors, and media.",
+        "**\"Site\"** means drugsfreeyouth.org and all sub-pages, forms, and services provided under this domain or affiliated subdomains.",
+        "**\"Reporting System\"** means the anonymous QR/web form and related incident-tracking tools used to submit reports to campaign staff and partner law enforcement.",
+        "**\"Submissions\"** means any content you upload to the Site - text, photos, videos, documents, testimonials, or forms.",
+        "**\"Partners\"** means police departments, NGOs, schools, corporates, and other entities working with the campaign."
+      ]
+    },
+    {
+      "id": "acceptance",
+      "number": "3",
+      "title": "Acceptance of terms",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "By accessing or using the Site you agree to be bound by these Terms and any documents they incorporate by reference (privacy policy, volunteer agreement, donation terms). If you do not accept these Terms, do not use the Site."
+      ]
+    },
+    {
+      "id": "scope",
+      "number": "4",
+      "title": "Scope of the website and services",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "**4.1** Our mission is community awareness, anonymous reporting, education, and partner coordination to reduce youth drug harm. The Site provides: resources (guides, articles), the Reporting System, volunteer signup, event listings, story submission, partner information, donation functionality (where enabled), and contact channels.",
+        "**4.2** The Site does not provide medical diagnosis, legal advice, or guaranteed emergency response. If you are facing an immediate danger or medical emergency, call local emergency services immediately."
+      ]
+    },
+    {
+      "id": "reporting",
+      "number": "5",
+      "title": "Reporting System - use and limitations",
+      "summary": "Reports can be submitted anonymously or with contact details - but they will be routed to partner police/campaign staff when triaged. Don't rely on the site for immediate emergency response.",
+      "color": "amber",
+      "content": [
+        "**5.1 Use.** You may submit reports of suspicious activity via the QR/web form or hotline. You should provide accurate location details and, where safe, optional photos to assist verification.",
+        "**5.2 Anonymity.** If you select anonymous mode, the system does not require you to enter identifying info. We collect only the content you enter. We will not intentionally collect or publish your personal identity data when you use anonymous mode.",
+        "**5.3 Triage & sharing.** All reports are triaged by campaign staff and/or law enforcement partners. We may share report content with partner agencies for verification and action. Users understand and consent that reports - including any media - may be accessed by partner authorities.",
+        "**5.4 Limitations.** We cannot guarantee any particular action by police or any other agency in response to a report. Response times, priorities, and operational choices are made by partner authorities. We will not be liable for any failure to act.",
+        "**5.5 Safety warning.** Do not endanger yourself to capture media or report. Do not attempt vigilante action. If immediate risk exists, call emergency services."
+      ]
+    },
+    {
+      "id": "submissions",
+      "number": "6",
+      "title": "User submissions, stories & media uploads",
+      "summary": "Only upload material you own or have permission to publish. We may edit, anonymize, or decline content; by submitting you grant us rights to use it.",
+      "color": "blue",
+      "content": [
+        "**6.1 Ownership & permission.** By submitting any content you confirm you own the content or have all necessary rights, releases, and permissions from every person identifiable in the content (including minors via parent/guardian consent) to grant the rights below.",
+        "**6.2 License grant.** You grant us a non-exclusive, royalty-free, transferable, sublicensable, worldwide license to use, reproduce, modify, publish, translate, create derivative works from, distribute, and display the content in connection with the Site and the campaign, in any media now known or later developed.",
+        "**6.3 Right to moderate.** We reserve the right (but have no obligation) to review, edit, refuse, or remove any Submission for any reason, including if it conflicts with privacy, safety, or partner agreements.",
+        "**6.4 Anonymization & consent.** We may anonymize names or identifying details before publishing. If content includes personal data and you later request removal, follow the process in Section 21.",
+        "**6.5 No confidential submission.** Unless expressly agreed in writing, submissions are not confidential and we are free to use ideas, concepts, or materials included in any submissions as part of our campaign.",
+        "**6.6 Photo consent.** For submissions containing images of identifiable people, including minors, you must retain written consent from subjects or legal guardians. If consent is not available, do not upload."
+      ]
+    },
+    {
+      "id": "volunteers",
+      "number": "7",
+      "title": "Volunteer signups & background checks",
+      "summary": "Volunteers must meet requirements, complete training, and may undergo background checks.",
+      "color": "green",
+      "content": [
+        "**7.1 Volunteer registration.** Anyone 18+ (or 16+ with parental consent where specified) may apply to volunteer. You must provide accurate information.",
+        "**7.2 Training.** Volunteers must complete any mandatory training before participation.",
+        "**7.3 Background checks.** For roles involving access to minors or sensitive operations, volunteers agree to background checks and reference verification. Consent for such checks is a condition of volunteer onboarding.",
+        "**7.4 Conduct.** Volunteers must follow our code of conduct. Breach of guidelines may lead to suspension or removal.",
+        "**7.5 Insurance & expenses.** Unless specified, volunteers are not employees and are not entitled to compensation. We may reimburse pre-approved expenses per policy."
+      ]
+    },
+    {
+      "id": "donations",
+      "number": "8",
+      "title": "Donations & financial support (if applicable)",
+      "summary": "If you donate, we will process through a payment partner, provide receipts, and use funds per stated purpose. Tax deductibility is not guaranteed.",
+      "color": "purple",
+      "content": [
+        "**8.1 Donation processing.** All payments are processed by our third-party payment processor. You agree to the payment processor's terms.",
+        "**8.2 Refunds & cancellations.** Donations are generally final. Refund policy (if any) is available on the donation page.",
+        "**8.3 Use of funds.** Donations are used to support campaign operations, events, and programs as described on the Site or in donor materials.",
+        "**8.4 Tax treatment.** We do not guarantee tax deductibility. If tax receipts are available, they will be issued per applicable law and donor status.",
+        "**8.5 Fraud & compliance.** We reserve the right to decline or refund donations if required by law, partner agreements, or fraud detection."
+      ]
+    },
+    {
+      "id": "conduct",
+      "number": "9",
+      "title": "User conduct and prohibited uses",
+      "summary": "Be safe, lawful, and respectful. Don't misuse reports, threaten others, or break laws.",
+      "color": "red",
+      "content": [
+        "**9.1** Prohibited activities include but are not limited to:",
+        "• Submitting false, malicious, or defamatory reports.",
+        "• Uploading content you do not own or have permission for.",
+        "• Attempting to identify anonymous reporters.",
+        "• Using the Site for harassment, hate speech, or illegal activities.",
+        "• Attempting to access restricted systems or interfere with Site operations.",
+        "• Impersonating staff, partners, or other users.",
+        "**9.2 Consequences.** We may suspend or ban accounts and share information with law enforcement as required."
+      ]
+    },
+    {
+      "id": "ip-rights",
+      "number": "10",
+      "title": "Intellectual property rights",
+      "summary": "We own the Site content; you own your submitted content but grant us a license to use it.",
+      "color": "indigo",
+      "content": [
+        "**10.1 Our content.** All Site content (text, graphics, logos, design, code) is owned or licensed by us and protected by IP laws. You may not reuse our materials without permission.",
+        "**10.2 Your content.** You retain ownership of Submissions, subject to the license you grant us in Section 6.2.",
+        "**10.3 Trademark.** \"Drugs Free Youth\" and related logos are trademarks of the organization and may not be used without written permission."
+      ]
+    },
+    {
+      "id": "privacy",
+      "number": "11",
+      "title": "Privacy, data sharing & retention (summary)",
+      "summary": "We protect privacy, share report content with police partners for action, and retain data as needed for program evaluation and legal compliance. Read the Privacy Policy for full details.",
+      "color": "teal",
+      "content": [
+        "**11.1 Privacy Policy.** Our Privacy Policy (linked on the Site) explains what data we collect, how we use it, who we share it with, and how long we keep it.",
+        "**11.2 Data sharing.** Report content and relevant submission data may be shared with partner police and authorized program partners for response. Contact details provided voluntarily may be used for follow-up.",
+        "**11.3 Data retention.** We retain submitted reports and records consistent with our operational needs and legal obligations. Anonymized analytics may be retained indefinitely.",
+        "**11.4 International transfers.** Data may be processed or stored in other jurisdictions per partner agreements; we will employ protections consistent with applicable law."
+      ]
+    },
+    {
+      "id": "third-party",
+      "number": "12",
+      "title": "Third-party links, partners & law enforcement cooperation",
+      "summary": "The Site links to partners and third-party resources. We are not liable for external sites and we cooperate with police per formal agreements.",
+      "color": "cyan",
+      "content": [
+        "**12.1 Third-party links.** The Site may link to external websites or embed third-party content; we are not responsible for those sites.",
+        "**12.2 Partners.** We work with police and NGOs under memoranda of understanding (MOUs). Partner actions are independent; we do not control partner policies.",
+        "**12.3 Law enforcement cooperation.** We will comply with legal requests and work with police partners. Reports may be disclosed to authorities as required by law or partner agreements."
+      ]
+    },
+    {
+      "id": "disclaimers",
+      "number": "13",
+      "title": "Disclaimers - no medical/legal advice / emergency instructions",
+      "summary": "The Site is informational only. For emergencies call local services. Seek professional medical or legal advice when needed.",
+      "color": "orange",
+      "content": [
+        "**13.1 Medical and legal disclaimer.** The Site's content is for informational purposes and does not replace professional medical or legal advice.",
+        "**13.2 Emergency instruction.** If you or someone else is in immediate danger, call your local emergency number immediately."
+      ]
+    },
+    {
+      "id": "liability",
+      "number": "14",
+      "title": "Limitation of liability",
+      "summary": "To the extent permitted by law, our liability is limited - we are not responsible for indirect or consequential losses from use of the Site.",
+      "color": "rose",
+      "content": [
+        "**14.1 Exclusion.** To the maximum extent permitted by law, we exclude all liability for indirect, incidental, special, consequential, punitive, or similar damages, including loss of profits, data, or goodwill.",
+        "**14.2 Cap on liability.** Our aggregate liability for direct losses arising from or relating to the Site will be limited to INR [insert cap amount] or the total amount you paid to us in the last 12 months, whichever is lower. If no payment was made, liability is limited to INR [nominal amount, e.g., 5,000].",
+        "**14.3 No guarantee.** We do not guarantee detection, prevention, or prosecution of criminal behavior, nor that any action will occur in response to a report."
+      ]
+    },
+    {
+      "id": "indemnity",
+      "number": "15",
+      "title": "Indemnity",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "You agree to indemnify, defend, and hold us harmless from any claims, liabilities, losses, damages, costs, and expenses (including reasonable legal fees) arising from your breach of these Terms, your misuse of the Site, or any content you submit."
+      ]
+    },
+    {
+      "id": "termination",
+      "number": "16",
+      "title": "Termination & suspension",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "We may suspend or terminate your access to the Site at any time, without notice, for conduct that we believe breaches these Terms or for any reason permitted by law. Sections that by their nature survive termination (IP, disclaimers, indemnity, limitation of liability) will continue in effect."
+      ]
+    },
+    {
+      "id": "changes",
+      "number": "17",
+      "title": "Changes to these Terms",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "We may modify these Terms from time to time. Material changes will be notified by posting notice on the Site and updating the Effective Date. Continued use following notice means you accept the modified Terms. For significant changes, we will attempt to notify registered users via email where feasible."
+      ]
+    },
+    {
+      "id": "governing-law",
+      "number": "18",
+      "title": "Governing law and dispute resolution",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "These Terms are governed by the laws of India. Any dispute shall be referred to mediation in [City, Karnataka] in good faith. If unresolved within 60 days, disputes will be subject to the exclusive jurisdiction of the courts of [City, Karnataka] (for example, Mangaluru)."
+      ]
+    },
+    {
+      "id": "contact",
+      "number": "19",
+      "title": "Contact & notices",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "Send legal notices or requests to:",
+        "**Drugs Free Youth**",
+        "[Legal Entity Name & Registered Address]",
+        "**Email:**",
+        "support@makeachangefoundation.in"
+      ]
+    },
+    {
+      "id": "miscellaneous",
+      "number": "20",
+      "title": "Miscellaneous",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "**20.1 Severability.** If any provision is held invalid, the remainder will remain in effect.",
+        "**20.2 Waiver.** Our failure to enforce a right is not a waiver.",
+        "**20.3 Entire agreement.** These Terms, the Privacy Policy, volunteer and donation terms form the entire agreement between you and us regarding the Site."
+      ]
+    },
+    {
+      "id": "takedown",
+      "number": "21",
+      "title": "How to request takedown, correction or privacy actions",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "**21.1 Content takedown/correction.** To request removal or correction of published content, email support@makeachangefoundation.in with: (a) a clear description of the content and location, (b) your contact details, (c) the reason for the request, and (d) proof of ownership or right to request removal where applicable.",
+        "**21.2 Emergency removal.** If content poses immediate harm, mark the message \"URGENT - REMOVAL REQUEST\" in the subject header.",
+        "**21.3 Response timeline.** We will acknowledge requests within 5 business days and aim to resolve within 30 days, subject to verification and legal constraints.",
+        "**21.4 Legal requests.** We respond to valid legal process and law enforcement information requests as required by law."
+      ]
+    },
+    {
+      "id": "acknowledgment",
+      "number": "22",
+      "title": "Acknowledgment - consent to publish anonymized content",
+      "summary": "",
+      "color": "gray",
+      "content": [
+        "By submitting materials or participating in activities, you acknowledge and agree that the organization may publish or reuse anonymized, aggregated outcomes and narratives from program operations for publicity, reporting, fundraising, partner engagement, and evaluation. If you require that submitted material remain private, do not submit it without discussing confidentiality in writing beforehand."
+      ]
+    }
+  ]
+}

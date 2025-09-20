@@ -137,21 +137,33 @@ const ExpandableChatToggle: React.FC<ExpandableChatToggleProps> = ({
   toggleChat,
   ...props
 }) => (
-  <Button
-    variant="default"
-    onClick={toggleChat}
-    className={cn(
-      "w-14 h-14 rounded-full shadow-md flex items-center justify-center hover:shadow-lg hover:shadow-black/30 transition-all duration-300",
-      className,
+  <div className="flex items-center gap-3">
+    {!isOpen && (
+      <div className="hidden sm:block bg-background border rounded-lg px-3 py-2 shadow-md">
+        <div className="text-sm font-medium text-foreground whitespace-nowrap">
+          Anti Drug
+        </div>
+        <div className="text-sm font-medium text-foreground whitespace-nowrap">
+          AI Counsellor
+        </div>
+      </div>
     )}
-    {...props}
-  >
-    {isOpen ? (
-      <X className="h-6 w-6" />
-    ) : (
-      icon || <MessageCircle className="h-6 w-6" />
-    )}
-  </Button>
+    <Button
+      variant="default"
+      onClick={toggleChat}
+      className={cn(
+        "w-14 h-14 rounded-full shadow-md flex items-center justify-center hover:shadow-lg hover:shadow-black/30 transition-all duration-300",
+        className,
+      )}
+      {...props}
+    >
+      {isOpen ? (
+        <X className="h-6 w-6" />
+      ) : (
+        icon || <MessageCircle className="h-6 w-6" />
+      )}
+    </Button>
+  </div>
 );
 
 ExpandableChatToggle.displayName = "ExpandableChatToggle";

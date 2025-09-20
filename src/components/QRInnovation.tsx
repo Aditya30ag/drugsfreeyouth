@@ -1,4 +1,5 @@
-﻿import React from 'react';
+import React from 'react';
+import Image from 'next/image';
 
 const QRInnovation = () => {
   return (
@@ -50,15 +51,53 @@ const QRInnovation = () => {
               </div>
 
               <div className="text-center">
-                <div className="bg-card rounded-2xl p-8 shadow-lg inline-block">
-                  <div className="w-32 h-32 bg-muted rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-16 h-16 text-muted-foreground" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M3 3h6v6H3V3zm8 0h6v6h-6V3zm8 0h2v2h-2V3zm0 4h2v2h-2V7zm0 4h2v2h-2v-2zM3 11h6v6H3v-6zm8 0h6v6h-6v-6zm8 0h2v2h-2v-2zm-8 8h2v2h-2v-2zm4 0h2v2h-2v-2z"/>
-                    </svg>
-                  </div>
-                  <p className="text-sm font-semibold text-foreground">QR Code</p>
-                  <p className="text-xs text-muted-foreground">Anonymous Reporting</p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-lg mx-auto">
+                  {/* Mangaluru City Police QR Code */}
+                  <a 
+                    href="https://tally.so/r/3jXOJx" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer block"
+                  >
+                    <div className="w-40 h-40 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 p-3">
+                      <Image
+                        src="/qr-code.png"
+                        alt="QR Code for Mangaluru City Police Anonymous Reporting"
+                        width={140}
+                        height={140}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">Mangaluru City</p>
+                    <p className="text-xs text-muted-foreground">Police Reporting</p>
+                    <p className="text-xs text-primary mt-2">Click to Report →</p>
+                  </a>
+
+                  {/* Udupi Police QR Code */}
+                  <a 
+                    href="https://tally.so/r/nWVA5k"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-card rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer block"
+                  >
+                    <div className="w-40 h-40 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 p-3">
+                      <Image
+                        src="/qr-code.png"
+                        alt="QR Code for Udupi Police Anonymous Reporting"
+                        width={140}
+                        height={140}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <p className="text-sm font-semibold text-foreground">Udupi Police</p>
+                    <p className="text-xs text-muted-foreground">Anonymous Reporting</p>
+                    <p className="text-xs text-primary mt-2">Click to Report →</p>
+                  </a>
                 </div>
+                
+                <p className="text-sm text-muted-foreground mt-6 font-medium">
+                  Scan QR codes or click to report drug activities anonymously
+                </p>
               </div>
             </div>
 

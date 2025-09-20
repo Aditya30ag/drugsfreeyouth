@@ -10,8 +10,8 @@ type Driver = {
 
 const drivers: Driver[] = [
   {
-    name: 'U.T. Khadar',
-    role: 'Speaker, Karnataka Legislative Assembly',
+    name: 'U.T. Khader',
+    role: 'Honourable Speaker, Legislative Assembly, Govt. Of Karnataka',
     message:
       'Every report brings us closer to protecting a young mind. Stay vigilant, speak up, and we will stand with you.',
     image: '/U.T._Khadar.webp',
@@ -25,24 +25,31 @@ const drivers: Driver[] = [
   },
   {
     name: 'Darshan H V',
-    role: 'Dakshina Kannada Deputy Commissioner',
+    role: 'Deputy Commissioner, Dakshina Kannda',
     message:
       'We are aligning every district resource to back genuine information and protect families from traffickers.',
     image: '/Darshan_HV.webp',
   },
   {
     name: 'Sudhir Kumar Reddy',
-    role: 'Police Commissioner, Mangaluru City',
+    role: 'IPS, Mangaluru City Police',
     message:
       'Timely intelligence from the community lets us dismantle the supply chain before it reaches our children.',
     image: '/Sudhir_Kumar_Reddy.webp',
   },
   {
     name: 'Dr. Arun Kumar',
-    role: 'Superintendent of Police, Udupi',
+    role: 'Superintendent of Police, Dakshina Kannada',
     message:
       'This campaign ensures every student has a shield. Report without fear—we are ready to respond.',
     image: '/Dr_Arun.webp',
+  },
+  {
+    name: 'Hariram Shankar',
+    role: 'IPS, Superintendent of Police, Udupi',
+    message:
+      'Together we build a protective network across Udupi district. Your vigilance strengthens our mission to keep communities drug-free.',
+    image: '/Hariram.webp',
   },
 ];
 

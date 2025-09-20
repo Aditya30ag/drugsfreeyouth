@@ -5,7 +5,7 @@ import Link from "next/link";
 const PartnersEndorsements = () => {
   const supportedCompanies = [
     { name: "Hirecentive", src: "/Hirecentive.webp", href: "https://hirecentive.com/" },
-    { name: "Dream Ideal", src: "/Dream Ideal.webp" },
+    { name: "Dream Ideal", src: "/Dream Ideal.webp", href: "https://dreamdealgroup.com" },
     { name: "Janpriya", src: "/Janpriya.webp", href: "https://janapriyahospitals.com" }
   ];
 
@@ -111,7 +111,7 @@ const PartnersEndorsements = () => {
           <div className="mt-10 space-y-12">
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
-                Supported by
+                Institutions
               </h3>
               <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                 {supportedCompanies.map((company) => (
@@ -151,7 +151,7 @@ const PartnersEndorsements = () => {
 
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
-                Institution Logos
+                Companies
               </h3>
               <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                 {institutionLogos.map((institution) => (
@@ -205,7 +205,7 @@ const PartnersEndorsements = () => {
         {/* Endorsements Section */}
         <div className="mb-12">
           <h3 className="text-xl sm:text-2xl font-bold text-foreground text-center mb-8">
-            What Leaders Are Saying
+          What Community Leaders Are Saying
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {endorsements.map((endorsement, index) => (
@@ -233,7 +233,7 @@ const PartnersEndorsements = () => {
         </div>
 
         {/* Partnership Benefits */}
-        <div className="bg-primary rounded-3xl p-8 sm:p-12 text-primary-foreground mb-16">
+        <div className="bg-primary rounded-3xl p-8 sm:p-12 text-primary-foreground">
           <div className="text-center mb-8">
             <h3 className="text-2xl sm:text-3xl font-bold mb-4">Why Organizations Partner With Us</h3>
             <p className="text-primary-foreground/80 max-w-2xl mx-auto">
@@ -268,24 +268,6 @@ const PartnersEndorsements = () => {
               <h4 className="font-bold text-lg mb-2">Transparent Operations</h4>
               <p className="text-primary-foreground/80 text-sm">Clear reporting and accountability in all our initiatives</p>
             </div>
-          </div>
-        </div>
-
-        {/* Call to Partner */}
-        <div className="text-center bg-muted rounded-3xl p-8 sm:p-12">
-          <h3 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-            Join Our Partnership Network
-          </h3>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Whether you represent a school, healthcare organization, business, or NGO, there&apos;s a place for you in our mission to create drug-free communities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-lg mx-auto">
-            <button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3 px-8 rounded-xl transition-colors duration-200">
-              Become a Partner
-            </button>
-            <button className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-bold py-3 px-8 rounded-xl transition-colors duration-200">
-              Download Partnership Info
-            </button>
           </div>
         </div>
       </div>

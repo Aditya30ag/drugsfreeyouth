@@ -24,11 +24,11 @@ const FAQIntro = () => {
                         Answers to the questions we hear most often. If your question is not here, 
                         email{' '}
                         <a 
-                            href="mailto:support@drugsfreeyouth.org"
+                            href="mailto:support@makeachangefoundation.in"
                             className="text-primary hover:text-primary/80 font-semibold transition-colors duration-200 inline-flex items-center gap-1"
                         >
                             <Mail className="h-4 w-4" />
-                            support@drugsfreeyouth.org
+                            support@makeachangefoundation.in
                         </a>
                         .
                     </p>

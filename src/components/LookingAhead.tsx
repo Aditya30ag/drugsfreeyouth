@@ -59,7 +59,7 @@ const LookingAhead = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {futureInitiatives.map((initiative, index) => (
             <div key={index} className={`bg-card rounded-3xl p-8 text-foreground transform hover:scale-105 transition-all duration-300`}>
-              <div className="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mb-6 text-primary-foreground">
+              <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-primary-foreground">
                 {initiative.icon}
               </div>
               <h3 className="text-xl font-bold mb-4">{initiative.title}</h3>
@@ -102,14 +102,6 @@ const LookingAhead = () => {
                 <p className="text-muted-foreground leading-relaxed mb-6">
                   Our expansion strategy focuses on sustainable, community-led initiatives that can thrive independently while maintaining our core values of collaboration, transparency, and measurable impact.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <button className="bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors duration-200">
-                    Join Our Expansion
-                  </button>
-                  <button className="bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors duration-200">
-                    Partner With Us
-                  </button>
-                </div>
               </div>
             </div>
           </div>

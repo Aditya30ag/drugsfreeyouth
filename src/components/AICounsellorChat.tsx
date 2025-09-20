@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
-import { Bot, Send, ShieldCheck, Sparkles, User } from "lucide-react";
+import { Send, ShieldCheck, Sparkles, User } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import type { Components } from "react-markdown";
 
@@ -359,7 +359,7 @@ export function AICounsellorChat() {
       className="sm:drop-shadow-2xl"
       size="lg"
       position="bottom-right"
-      icon={<Bot className="h-6 w-6" />}
+      icon={<User  className="h-6 w-6" /> }
       isOpen={isOpen}
       onOpenChange={setIsOpen}
     >
@@ -368,7 +368,7 @@ export function AICounsellorChat() {
         <div className="relative flex w-full items-center justify-between gap-2">
           <div className="flex items-center gap-2 text-sm font-medium">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground/15">
-              <Bot className="h-5 w-5" />
+              <User  className="h-5 w-5" />
             </span>
             <div>
               <h1 className="text-lg font-semibold">AI Counsellor</h1>
@@ -404,7 +404,7 @@ export function AICounsellorChat() {
               )}
             >
               <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
-                {message.role === "user" ? <User className="h-5 w-5" /> : <Bot className="h-5 w-5" />}
+                {message.role === "user" ? <User className="h-5 w-5" /> : <User  className="h-5 w-5" />}
               </div>
               <ChatBubbleMessage
                 variant={message.role === "user" ? "sent" : "received"}
