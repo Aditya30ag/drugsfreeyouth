@@ -7,7 +7,7 @@ const FourPillars = () => {
       description: "We engage religious leaders, schools, and local influencers to speak openly about drugs, breaking the silence and stigma.",
       tagline: "Because awareness is the first weapon against denial.",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
         </svg>
       ),
@@ -18,7 +18,7 @@ const FourPillars = () => {
       description: "Grassroots \"corner meets\" activate communities to spot risks early, build local vigilance, and create trusted channels to law enforcement.",
       tagline: "Because real change starts where people live.",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
         </svg>
       ),
@@ -29,7 +29,7 @@ const FourPillars = () => {
       description: "Parents and teachers are the first line of defense. Our parent programs, educator toolkits, and student dialogues ensure families are not left powerless.",
       tagline: "Because prevention begins at home.",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
         </svg>
       ),
@@ -40,7 +40,7 @@ const FourPillars = () => {
       description: "From walkathons to oath-taking ceremonies, we make the fight against drugs visible, loud, and collective.",
       tagline: "Because silence protects the problem — public action defeats it.",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd"/>
         </svg>
       ),
@@ -64,7 +64,7 @@ const FourPillars = () => {
           {pillars.map((pillar, index) => (
             <div key={index} className="bg-card rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex items-start mb-6">
-                <div className={`bg-primary rounded-xl p-4 mr-6 flex-shrink-0 text-primary-foreground`}>
+                <div className={`bg-red-100 rounded-xl p-4 mr-6 flex-shrink-0 text-primary-foreground`}>
                   {pillar.icon}
                 </div>
                 <div>

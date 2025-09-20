@@ -20,7 +20,7 @@ const MovementSection = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-card rounded-2xl p-6">
-              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-primary-foreground">
+              <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-red-600">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
                 </svg>
@@ -30,7 +30,7 @@ const MovementSection = () => {
             </div>
             
             <div className="bg-card rounded-2xl p-6">
-              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-primary-foreground">
+              <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-red-600">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001z" clipRule="evenodd"/>
                 </svg>
@@ -40,7 +40,7 @@ const MovementSection = () => {
             </div>
             
             <div className="bg-card rounded-2xl p-6">
-              <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mx-auto mb-4 text-primary-foreground">
+              <div className="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mx-auto mb-4 text-red-600">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd"/>
                 </svg>

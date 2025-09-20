@@ -111,7 +111,7 @@ const PartnersEndorsements = () => {
           <div className="mt-10 space-y-12">
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
-                Institutions
+                Supported by: → Institutions
               </h3>
               <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                 {supportedCompanies.map((company) => (
@@ -151,7 +151,7 @@ const PartnersEndorsements = () => {
 
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
-                Companies
+                Powered by: →  Companies
               </h3>
               <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                 {institutionLogos.map((institution) => (

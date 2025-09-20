@@ -6,7 +6,7 @@ const HowWeWork = () => {
       title: "Community Awareness",
       description: "Programs at religious institutions, schools, and public spaces",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/>
         </svg>
       ),
@@ -16,7 +16,7 @@ const HowWeWork = () => {
       title: "Neighborhood Action",
       description: "Corner meets that create local watchdog networks",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
         </svg>
       ),
@@ -26,7 +26,7 @@ const HowWeWork = () => {
       title: "Family Empowerment",
       description: "Workshops and resources for parents and educators",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
         </svg>
       ),
@@ -36,7 +36,7 @@ const HowWeWork = () => {
       title: "Public Mobilization",
       description: "Walkathons, pledge ceremonies, and awareness rallies",
       icon: (
-        <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
           <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd"/>
         </svg>
       ),
@@ -59,7 +59,7 @@ const HowWeWork = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {pillars.map((pillar, index) => (
             <div key={index} className={`bg-card rounded-3xl p-8 text-foreground transform hover:scale-105 transition-all duration-300`}>
-              <div className="w-16 h-16 bg-red-600 rounded-2xl flex items-center justify-center mb-6 text-primary-foreground">
+              <div className="w-16 h-16 bg-red-100 rounded-2xl flex items-center justify-center mb-6 text-primary-foreground">
                 {pillar.icon}
               </div>
               <h3 className="text-xl font-bold mb-4">{pillar.title}</h3>

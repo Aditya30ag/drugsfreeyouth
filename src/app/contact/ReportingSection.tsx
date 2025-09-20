@@ -1,5 +1,6 @@
-﻿import React from 'react';
-import { QrCode, Shield } from 'lucide-react';
+import React from 'react';
+import { Shield } from 'lucide-react';
+import QRCodeGenerator from '../../components/QRCodeGenerator';
 
 const ReportingSection = () => {
     return (
@@ -18,18 +19,66 @@ const ReportingSection = () => {
                 </div>
                 
                 <div className="bg-card rounded-2xl shadow-lg p-8 text-center">
-                    <div className="flex flex-col items-center space-y-6">
-                        <div className="w-32 h-32 bg-muted rounded-lg flex items-center justify-center">
-                            <QrCode size={80} className="text-muted-foreground" />
-                        </div>
-                        <div className="space-y-4">
-                            <p className="text-muted-foreground font-medium">
-                                👉 Scan this QR code to report anonymously
-                            </p>
-                            <button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-3 rounded-lg transition-colors duration-200 inline-flex items-center space-x-2">
-                                <QrCode size={20} />
-                                <span>Scan & Report Now</span>
-                            </button>
+                    <div className="mb-8">
+                        <p className="text-muted-foreground font-medium mb-6">
+                            👉 Scan QR codes to report anonymously
+                        </p>
+                        
+                        {/* QR Codes Side by Side */}
+                        <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center items-center">
+                            {/* Mangalore QR Code */}
+                            <div className="text-center">
+                                <h3 className="text-lg font-semibold text-foreground mb-4">Mangalore</h3>
+                                <a 
+                                    href="https://tally.so/r/3jXOJx" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="block"
+                                >
+                                    <div className="w-40 h-40 bg-white rounded-lg shadow-lg flex items-center justify-center border-2 border-border p-3 hover:shadow-xl transition-shadow duration-300">
+                                        <QRCodeGenerator 
+                                            text="https://tally.so/r/3jXOJx" 
+                                            size={140}
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </a>
+                                <a 
+                                    href="https://tally.so/r/3jXOJx" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-primary hover:underline mt-3 inline-block font-medium"
+                                >
+                                    Click Here to Report
+                                </a>
+                            </div>
+                            
+                            {/* Udupi QR Code */}
+                            <div className="text-center">
+                                <h3 className="text-lg font-semibold text-foreground mb-4">Udupi</h3>
+                                <a 
+                                    href="https://tally.so/r/nWVA5k" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="block"
+                                >
+                                    <div className="w-40 h-40 bg-white rounded-lg shadow-lg flex items-center justify-center border-2 border-border p-3 hover:shadow-xl transition-shadow duration-300">
+                                        <QRCodeGenerator 
+                                            text="https://tally.so/r/nWVA5k" 
+                                            size={140}
+                                            className="w-full h-full"
+                                        />
+                                    </div>
+                                </a>
+                                <a 
+                                    href="https://tally.so/r/nWVA5k" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="text-sm text-primary hover:underline mt-3 inline-block font-medium"
+                                >
+                                    Click Here to Report
+                                </a>
+                            </div>
                         </div>
                     </div>
                     
