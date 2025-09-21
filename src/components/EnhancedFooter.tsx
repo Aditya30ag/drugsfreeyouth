@@ -125,13 +125,13 @@ const EnhancedFooter: React.FC = () => {
               <div className="flex space-x-6 text-sm pr-16">
               
                 <a
-                  href="/privacy-policy"
+                  href="/"
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Privacy Policy
                 </a>
                 <a
-                  href="/terms-and-conditions"
+                  href="/"
                   className="text-muted-foreground hover:text-foreground transition-colors duration-200"
                 >
                   Terms & Conditions
