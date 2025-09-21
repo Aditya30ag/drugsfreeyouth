@@ -3,17 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PartnersEndorsements = () => {
-  const supportedCompanies = [
-    { name: "Hirecentive", src: "/Hirecentive.webp", href: "https://hirecentive.com/" },
-    { name: "Dream Ideal", src: "/Dream Ideal.webp", href: "https://dreamdealgroup.com" },
-    { name: "Janpriya", src: "/Janpriya.webp", href: "https://janapriyahospitals.com" }
-  ];
-
   const institutionLogos = [
     { name: "St. Aloysius", src: "/aloysius.webp", href: "https://staloysius.edu.in/" },
     { name: "Barakah", src: "/barakh.webp", href: "https://bismangalore.com" },
     { name: "Yenepoya", src: "/Yenepoya.webp", href: "https://www.yenepoya.edu.in/" },
-    { name: "Manipal", src: "/manipal.webp", href: "https://manipal.edu/" }
+    { name: "Manipal", src: "/manipal.webp", href: "https://manipal.edu/" },
+    { name: "Janpriya", src: "/Janpriya.webp", href: "https://janapriyahospitals.com" }
+  ];
+
+  const supportedCompanies = [
+    { name: "Hirecentive", src: "/Hirecentive.webp", href: "https://hirecentive.com/" },
+    { name: "Dream Ideal", src: "/Dream Ideal.webp", href: "https://dreamdealgroup.com" }
   ];
 
   const partners = [
@@ -111,7 +111,32 @@ const PartnersEndorsements = () => {
           <div className="mt-10 space-y-12">
             <div>
               <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
-                Supported by: → Institutions
+                SUPPORTED BY
+              </h3>
+              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
+                {institutionLogos.map((institution) => (
+                  <Link
+                    key={institution.name}
+                    href={institution.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="w-48 h-32 sm:w-56 sm:h-36 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
+                  >
+                    <Image
+                      src={institution.src}
+                      alt={`${institution.name} logo`}
+                      width={180}
+                      height={120}
+                      className="max-h-[72px] w-auto object-contain"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
+                POWERED BY
               </h3>
               <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                 {supportedCompanies.map((company) => (
@@ -145,31 +170,6 @@ const PartnersEndorsements = () => {
                       />
                     </div>
                   )
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-lg sm:text-xl font-semibold text-foreground text-center mb-6">
-                Powered by: →  Companies
-              </h3>
-              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
-                {institutionLogos.map((institution) => (
-                  <Link
-                    key={institution.name}
-                    href={institution.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="w-48 h-32 sm:w-56 sm:h-36 bg-card rounded-2xl shadow-sm flex items-center justify-center transition-transform hover:scale-[1.02]"
-                  >
-                    <Image
-                      src={institution.src}
-                      alt={`${institution.name} logo`}
-                      width={180}
-                      height={120}
-                      className="max-h-[72px] w-auto object-contain"
-                    />
-                  </Link>
                 ))}
               </div>
             </div>

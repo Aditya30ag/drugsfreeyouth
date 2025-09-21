@@ -363,29 +363,29 @@ export function AICounsellorChat() {
       isOpen={isOpen}
       onOpenChange={setIsOpen}
     >
-      <ExpandableChatHeader className="relative flex-col items-start gap-3 overflow-hidden border-b bg-gradient-to-r from-primary to-primary/90 p-5 text-left text-primary-foreground">
+      <ExpandableChatHeader className="relative flex-col items-start gap-3 overflow-hidden border-b bg-gradient-to-r from-red-500 to-red-600 p-5 text-left text-white">
         <div className="pointer-events-none absolute inset-0 " />
         <div className="relative flex w-full items-center justify-between gap-2">
           <div className="flex items-center gap-2 text-sm font-medium">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary-foreground/15">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15">
               <User  className="h-5 w-5" />
             </span>
             <div>
               <h1 className="text-lg font-semibold">AI Counsellor</h1>
-              <p className="text-xs text-primary-foreground/80">Confidential guidance within seconds.</p>
+              <p className="text-xs text-white/80">Confidential guidance within seconds.</p>
             </div>
           </div>
-          <span className="relative flex items-center gap-1 rounded-full bg-primary-foreground/20 px-3 py-1 text-xs font-medium">
+          <span className="relative flex items-center gap-1 rounded-full bg-white/20 px-3 py-1 text-xs font-medium">
             <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-emerald-300" />
             Online
           </span>
         </div>
-        <div className="relative flex flex-wrap items-center gap-2 text-xs text-primary-foreground/90">
-          <div className="inline-flex items-center gap-1 rounded-full bg-primary-foreground/15 px-3 py-1">
+        <div className="relative flex flex-wrap items-center gap-2 text-xs text-white/90">
+          <div className="inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1">
             <ShieldCheck className="h-3.5 w-3.5" />
             Confidential
           </div>
-          <div className="inline-flex items-center gap-1 rounded-full bg-primary-foreground/15 px-3 py-1">
+          <div className="inline-flex items-center gap-1 rounded-full bg-white/15 px-3 py-1">
             <Sparkles className="h-3.5 w-3.5" />
             Actionable tips
           </div>
@@ -393,8 +393,8 @@ export function AICounsellorChat() {
       </ExpandableChatHeader>
 
       <ExpandableChatBody className="relative bg-muted/20 flex flex-col flex-1 min-h-0 overflow-hidden">
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(30,58,138,0.08),transparent_60%)]" />
-        <ChatMessageList className="relative flex-1 min-h-0 overflow-y-auto pr-1 sm:pr-2 [scrollbar-color:rgba(30,58,138,0.35)_transparent]">
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(239,68,68,0.08),transparent_60%)]" />
+        <ChatMessageList className="relative flex-1 min-h-0 overflow-y-auto pr-1 sm:pr-2 [scrollbar-color:rgba(239,68,68,0.35)_transparent]">
           {messages.map((message) => (
             <ChatBubble
               key={message.id}
@@ -403,7 +403,7 @@ export function AICounsellorChat() {
                 message.role === "user" ? "items-end" : "items-start",
               )}
             >
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-500/10 text-red-500">
                 {message.role === "user" ? <User className="h-5 w-5" /> : <User  className="h-5 w-5" />}
               </div>
               <ChatBubbleMessage
@@ -422,7 +422,7 @@ export function AICounsellorChat() {
 
           {isLoading && (
             <ChatBubble variant="received">
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary">
+              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-red-500/10 text-red-500">
                 <User className="h-5 w-5" />
               </div>
               <ChatBubbleMessage
@@ -447,7 +447,7 @@ export function AICounsellorChat() {
               disabled={isLoading}
               className={cn(
                 "rounded-full border border-border/70 bg-background px-3 py-1 text-xs font-medium text-foreground transition-colors duration-200",
-                "hover:border-primary/60 hover:text-primary disabled:cursor-not-allowed disabled:opacity-60",
+                "hover:border-red-500/60 hover:text-red-500 disabled:cursor-not-allowed disabled:opacity-60",
               )}
             >
               {prompt}
@@ -459,7 +459,7 @@ export function AICounsellorChat() {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="relative rounded-2xl border border-border/80 bg-background/90 shadow-sm focus-within:border-primary focus-within:ring-1 focus-within:ring-primary/40"
+          className="relative rounded-2xl border border-border/80 bg-background/90 shadow-sm focus-within:border-red-500 focus-within:ring-1 focus-within:ring-red-500/40"
         >
           <div className="relative">
             <ChatInput
@@ -473,7 +473,7 @@ export function AICounsellorChat() {
             <Button
               type="submit"
               size="icon"
-              className="absolute right-2 bottom-2 h-9 w-9 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 disabled:opacity-60"
+              className="absolute right-2 bottom-2 h-9 w-9 rounded-full bg-red-500 text-white hover:bg-red-600 disabled:opacity-60"
               disabled={isLoading}
               aria-label="Send message"
             >

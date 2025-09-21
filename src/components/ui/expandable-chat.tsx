@@ -139,11 +139,11 @@ const ExpandableChatToggle: React.FC<ExpandableChatToggleProps> = ({
 }) => (
   <div className="flex items-center gap-3">
     {!isOpen && (
-      <div className="hidden sm:block bg-background border rounded-lg px-3 py-2 shadow-md">
-        <div className="text-sm font-medium text-foreground whitespace-nowrap">
+      <div className="hidden sm:block bg-red-500 border border-red-600 rounded-lg px-3 py-2 shadow-md">
+        <div className="text-sm font-medium text-white whitespace-nowrap">
           Anti Drug
         </div>
-        <div className="text-sm font-medium text-foreground whitespace-nowrap">
+        <div className="text-sm font-medium text-white whitespace-nowrap">
           AI Counsellor
         </div>
       </div>
@@ -152,7 +152,7 @@ const ExpandableChatToggle: React.FC<ExpandableChatToggleProps> = ({
       variant="default"
       onClick={toggleChat}
       className={cn(
-        "w-14 h-14 rounded-full shadow-md flex items-center justify-center hover:shadow-lg hover:shadow-black/30 transition-all duration-300",
+        "w-14 h-14 rounded-full shadow-md flex items-center justify-center hover:shadow-lg hover:shadow-red-500/30 transition-all duration-300 bg-red-500 hover:bg-red-600 text-white",
         className,
       )}
       {...props}
